@@ -1,0 +1,29 @@
+.firstText1 h1
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(13, 120, 220);
+    font-size: 40px;
+    font-weight: 200px;
+    text-shadow: 5px, 5px;
+    margin-top: 15px;
+}
+.firstText1 h2
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(13, 120, 220);
+    font-size: 20px;
+    font-weight: 200px;
+    text-shadow: 5px, 5px;  
+}
+ h3 h4
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(13, 120, 220);
+    font-size: 20px;
+    font-weight: 100px;
+    text-shadow: 5px, 5px; 
+    margin-top: 15px;
+}

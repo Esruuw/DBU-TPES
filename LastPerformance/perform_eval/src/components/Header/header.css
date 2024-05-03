@@ -1,0 +1,332 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.navbarr
+{
+    background: #000;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 8px 20px black;
+}
+.navbarr h1
+{ 
+color: white;
+text-align: center;
+}
+
+.secnavbar
+{
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 8px 20px rgb(75, 71, 71);
+}
+.secnavbar nav
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    margin-left: 500px;
+    position: relative;
+    padding-top: 20px;
+}
+.secnavbar nav .list_nav .nav_link {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  .secnavbar nav .list_nav:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+  }
+  .secnavbar nav .list_nav:hover .nav_link {
+    color: rgb(0, 28,73); 
+    font-weight: 400;
+  }
+
+  .firstPage
+  {
+    display: flex;
+    gap: 70px;
+    margin-left: 50px;
+  }
+
+  .firstPage1
+{
+    height: 100%;
+    width:40% ;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 200px;
+  
+    h1
+    {
+        font-size: 40px;
+        color: rgb(0,28,73);
+    }
+    P
+    {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .buttons
+    {
+        button
+        {
+      padding: 20px;  
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: rgb(0, 28,73);
+      color: white;
+      margin-right: 20px;
+      cursor: pointer;
+      font-weight: 500;
+      width: 120px;
+      margin-top: 10px;
+        }   
+    }
+}
+
+.firstimage
+{
+margin-right: 100px;
+margin-top: 120px;
+}
+
+.secondpage
+{
+    display: flex;
+    gap: 100px;
+}
+.secondpage .secondleft
+{
+margin-left: 100px;
+}
+
+.secondright
+{
+    margin-top: 50px;
+    color: rgb(0,28,73);
+}
+.secondright .par1
+{
+    font-size: 20px;
+    width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+.secondright .par2
+{
+    font-size: 20px;
+    width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+
+}
+
+.secondright .par3
+{
+    font-size: 20px;
+    width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+
+}
+
+.secondright .par4
+{
+    font-size: 20px;
+    width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+   
+
+}
+
+.thirdpage  h1
+{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0,28,73);
+}
+.third1
+{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 30px;
+    gap: 50px;
+}
+.third1 .box1
+{
+    height: 300px;
+    width: 330px;
+    border: 0.2px solid;
+    border-radius: 4px;
+    color: #c7baba;
+    box-shadow: 0px 8px 30px rgb(75, 71, 71);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: rgb(54, 57, 61);
+}
+.third1 .box1:hover {
+    transform: translateY(-10px); /* Move up by 10px on hover */
+}
+
+.third1 .box2
+{
+    height: 300px;
+    width: 330px;
+    border: 0.2px solid;
+    border-radius: 4px;
+    color: #c7baba;
+    box-shadow: 0px 8px 20px rgb(75, 71, 71);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);
+}
+.third1 .box2:hover {
+    transform: translateY(-10px); /* Move up by 10px on hover */
+}
+.third1 .box3
+{
+    height: 300px;
+    width: 330px;
+    border: 0.2px solid;
+    border-radius: 4px;
+    color: #c7baba;
+    box-shadow: 0px 8px 20px rgb(75, 71, 71);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: rgb(0,28,73);
+}
+.third1 .box3:hover {
+    transform: translateY(-10px); /* Move up by 10px on hover */
+}
+.third1 .box4
+{
+    height: 300px;
+    width: 330px;
+    border: 0.2px solid;
+    border-radius: 4px;
+    color: #c7baba;
+    box-shadow: 0px 8px 20px rgb(75, 71, 71);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: rgb(0,28,73);
+}
+.third1 .box4:hover {
+    transform: translateY(-10px); /* Move up by 10px on hover */
+}
+
+.fourthpage .fourth1
+{
+    height: 300px;
+    width: 100%;
+    background: rgb(255,255,255);
+    margin-top: 15px;
+    margin-top: 20px;
+
+}
+.fourthpage  h1
+{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0,28,73);
+    margin-top: 45px;
+}
+.fourth1{
+    display: flex;
+    gap: 300px;
+    margin-left: 400px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);
+}
+.fourth1 .fourthfirst .esru
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+.fourth1 .fourthfirst .nahi
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+.fourth1 .fourthfirst .nati
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+/* borderrrrrrrr */
+.fourth1 .fourthsecond .kenu
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+
+.fourth1 .fourthsecond .hale
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+
+.fourth1 .fourthsecond .amen
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+/* borderrrrrrrr */
+.fourth1 .fourththird .rich
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+
+.fourth1 .fourththird .eba
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+
+.fourth1 .fourththird .roba
+{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0,28,73);   
+}
+/* borderrrrrrrr */
+
+.fifthpage
+{
+    height: 50px;
+    width: 100%;
+    background: rgb(0,28,73);
+    margin-top: 15px;
+}
+.fifthpage h4
+{
+    text-align: center;
+    color: white;
+    margin-top: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 15px;
+}

@@ -1,0 +1,1821 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.container1
+{
+    margin: auto;
+    margin-top: 30px;
+ 
+}
+.container1 .firstText h1
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(13, 120, 220);
+    font-size: 40px;
+    font-weight: 200px;
+     text-shadow: 5px, 5px;
+}
+.container1 .firstText h2
+{
+    text-align: center;
+}
+.container1 .firstText h3
+{
+    text-align: center;
+}
+.formdiv
+{
+display: flex;
+}
+
+
+.formdiv1 
+{
+border: 0px solid !important;
+color: rgb(0, 0, 0);
+height: 430px;
+width: 500px;
+margin-left: 200px;
+}
+
+.formdiv1 h2
+{
+color: rgb(13, 120, 220);
+font-size: 24px; 
+font-family: Lexend;
+font-weight: 500; 
+line-height: 21px;
+word-wrap: break-word;
+text-align: left;
+margin-left: 40px;
+}
+
+
+.formdiv1 .formdiv1a
+{
+    border: 1px solid;
+    color: rgb(207, 6, 6);
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+.formdiv1 .formdiv1a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv1 .formdiv1a h4 input
+{
+    color: #206FBE;
+    margin-left: 250px;
+    
+}
+
+
+.formdiv1 .formdiv1b
+{
+    border: 1px solid;
+    color: black;
+    height: 40px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+
+.formdiv1 .formdiv1b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv1 .formdiv1b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+
+.formdiv1 .formdiv1c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv1 .formdiv1c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+    font-weight: 500; 
+    line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv1 .formdiv1c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+
+
+.formdiv1 .formdiv1d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv1 .formdiv1d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv1 .formdiv1d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+}
+
+
+.formdiv1 .formdiv1e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv1 .formdiv1e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv1 .formdiv1e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+
+
+.formdiv2
+{
+border: 0px solid !important;
+color: #127fec;
+height: 430px;
+width: 500px;
+margin-left: 100px;
+}
+
+.formdiv2 h2
+{
+color: #206FBE;
+font-size: 24px; 
+font-family: Lexend;
+font-weight: 500; 
+line-height: 21px;
+word-wrap: break-word;
+text-align: left !important;
+margin-left: 40px !important;
+}
+
+.formdiv2 .formdiv2a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+.formdiv2 .formdiv2a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv2 .formdiv2a h4 input
+{
+    color: #206FBE;
+    margin-left: 250px;
+    
+}
+
+.formdiv2 .formdiv2b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.formdiv2 .formdiv2b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv2 .formdiv2b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+.formdiv2 .formdiv2c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv2 .formdiv2c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv2 .formdiv2c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+
+
+.formdiv2 .formdiv2d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv2 .formdiv2d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv2 .formdiv2d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+
+
+.formdiv2 .formdiv2e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv2 .formdiv2e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv2 .formdiv2e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+
+
+.formdiv3
+{
+border: 0px solid !important;
+color: #127fec;
+height: 400px;
+width: 500px;
+margin-left: 100px;
+margin-right: 50px;
+}
+
+.formdiv3 h2
+{
+color: #206FBE;
+font-size: 24px; 
+font-family: Lexend;
+font-weight: 500; 
+line-height: 21px;
+word-wrap: break-word;
+text-align: left !important;
+margin-left: 40px !important;
+}
+
+.formdiv3 .formdiv3a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+.formdiv3 .formdiv3a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3a h4 input
+{
+    color: #206FBE;
+    margin-left: 250px;
+    
+}
+
+.formdiv3 .formdiv3b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+
+.formdiv3 .formdiv3b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+
+.formdiv3 .formdiv3c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv3 .formdiv3c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+
+
+.formdiv3 .formdiv3d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv3 .formdiv3d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+
+
+.formdiv3 .formdiv3e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv3 .formdiv3e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+.formdiv3 .formdiv3b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+
+.formdiv3 .formdiv3b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+
+.formdiv3 .formdiv3c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv3 .formdiv3c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+
+
+.formdiv3 .formdiv3d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv3 .formdiv3d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+
+
+.formdiv3 .formdiv3e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+.formdiv3 .formdiv3e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdiv3 .formdiv3e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+
+
+.formdiv4
+{
+border: 2px solid;
+color: #127fec;
+height: 400px;
+width: 500px;
+margin-left: 100px;
+margin-right: 50px;
+}
+
+.formdiv4 h2
+{
+color: #206FBE;
+font-size: 24px; 
+font-family: Lexend;
+ font-weight: 500; 
+ line-height: 21px;
+  word-wrap: break-word
+}
+
+.formdiv4 .formdiv4a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+
+.formdiv4 .formdiv4b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.formdiv4 .formdiv4c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv4 .formdiv4d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv4 .formdiv4e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+.formdiv1 
+{
+border: 0.2px solid;
+color: black;
+height: 430px;
+width: 500px;
+margin-left: 100px;
+}
+
+.formdiv1 h2
+{
+color: #206FBE;
+font-size: 24px; 
+font-family: Lexend;
+ font-weight: 500; 
+ line-height: 21px;
+  word-wrap: break-word;
+  text-align: left;
+  margin-left: 40px;
+}
+.formdiv1 .formdiv1a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+
+.formdiv1 .formdiv1b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.formdiv1 .formdiv1c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv1 .formdiv1d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv1 .formdiv1e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+
+
+
+
+.formdiv2
+{
+border: 2px solid;
+color: #127fec;
+height: 430px;
+width: 500px;
+margin-left: 100px;
+}
+
+.formdiv2 h2
+{
+color: #206FBE;
+font-size: 24px; 
+font-family: Lexend;
+ font-weight: 500; 
+ line-height: 21px;
+  word-wrap: break-word
+}
+
+.formdiv2 .formdiv2a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+
+.formdiv2 .formdiv2b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.formdiv2 .formdiv2c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv2 .formdiv2d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdiv2 .formdiv2e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+
+/* borderrrrrrrrrrrrrrrrrrrrrrrr */
+
+
+
+
+.formdivsecond
+{
+border: 0px solid;
+color: black;
+height: 430px;
+width: 500px;
+margin-left: 100px;
+display: flex;
+gap: 130px;
+margin-top: 30px;
+}
+
+.formdivsecond h2
+{
+color: #206FBE;
+font-size: 24px; 
+font-family: Lexend;
+ font-weight: 500; 
+ line-height: 21px;
+  word-wrap: break-word;
+  text-align: left;
+  margin-left: 40px;
+}
+.formdivsecond1 .formdivsecond1a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+.formdivsecond1 .formdivsecond1a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond1 .formdivsecond1a h4 input
+{
+    color: #206FBE;
+    margin-left: 250px;
+    
+}
+/* border */
+
+.formdivsecond1 .formdivsecond1b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.formdivsecond1 .formdivsecond1b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond1 .formdivsecond1b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+/* border */
+
+.formdivsecond1 .formdivsecond1c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond1 .formdivsecond1c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond1 .formdivsecond1c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+/* border */
+
+.formdivsecond1 .formdivsecond1d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond1 .formdivsecond1d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond1 .formdivsecond1d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+/* border */
+
+.formdivsecond1 .formdivsecond1e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond1 .formdivsecond1e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond1 .formdivsecond1e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+/* border */
+.formdivsecond2 .formdivsecond2a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+
+}
+
+.formdivsecond2 .formdivsecond2a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond2 .formdivsecond2a h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+/* border */
+.formdivsecond2 .formdivsecond2b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond2 .formdivsecond2b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond2 .formdivsecond2b h4 input
+{
+    color: #206FBE;
+    margin-left: 310px;
+    
+}
+
+/* border */
+.formdivsecond2 .formdivsecond2c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond2 .formdivsecond2c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond2 .formdivsecond2c h4 input
+{
+    color: #206FBE;
+    margin-left: 270px;
+    
+}
+
+
+/* border */
+.formdivsecond2 .formdivsecond2d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond2 .formdivsecond2d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond2 .formdivsecond2d h4 input
+{
+    color: #206FBE;
+    margin-left: 295px;
+    
+}
+
+/* border */
+.formdivsecond2 .formdivsecond2e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond2 .formdivsecond2e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond2 .formdivsecond2e h4 input
+{
+    color: #206FBE;
+    margin-left: 240px;
+    
+}
+/* borderrrrrrrrrrrrr */
+.formdivsecond3 .formdivsecond3a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+.formdivsecond3 .formdivsecond3a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond3 .formdivsecond3a h4 input
+{
+    color: #206FBE;
+    margin-left: 275px;
+    
+}
+/* border */
+.formdivsecond3 .formdivsecond3b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond3 .formdivsecond3b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond3 .formdivsecond3b h4 input
+{
+    color: #206FBE;
+    margin-left: 325px;
+    
+}
+
+/* border */
+.formdivsecond3 .formdivsecond3c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond3 .formdivsecond3c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond3 .formdivsecond3c h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+
+/* border */
+.formdivsecond3 .formdivsecond3d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond3 .formdivsecond3d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond3 .formdivsecond3d h4 input
+{
+    color: #206FBE;
+    margin-left: 310px;
+    
+}
+
+/* border */
+.formdivsecond3 .formdivsecond3e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivsecond3 .formdivsecond3e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivsecond3 .formdivsecond3e h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+
+
+/* Third divvvvvvvvvvv */
+
+
+
+.formdivthird
+{
+border: 0px solid;
+color: black;
+height: 430px;
+width: 500px;
+margin-left: 100px;
+display: flex;
+gap: 130px;
+margin-top: 30px;
+}
+
+.formdivthird h2
+{
+color: #206FBE;
+font-size: 24px; 
+font-family: Lexend;
+ font-weight: 500; 
+ line-height: 21px;
+  word-wrap: break-word;
+  text-align: left;
+  margin-left: 40px;
+}
+.formdivthird1 .formdivthird1a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+.formdivthird1 .formdivthird1a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird1 .formdivthird1a h4 input
+{
+    color: #206FBE;
+    margin-left: 250px;
+    
+}
+/* border */
+
+.formdivthird1 .formdivthird1b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+.formdivthird1 .formdivthird1b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird1 .formdivthird1b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+/* border */
+
+.formdivthird1 .formdivthird1c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird1 .formdivthird1c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird1 .formdivthird1c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+/* border */
+
+.formdivthird1 .formdivthird1d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird1 .formdivthird1d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird1 .formdivthird1d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+/* border */
+
+.formdivthird1 .formdivthird1e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird1 .formdivthird1e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird1 .formdivthird1e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+/* border */
+.formdivthird2 .formdivthird2a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+
+}
+
+.formdivthird2 .formdivthird2a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird2 .formdivthird2a h4 input
+{
+    color: #206FBE;
+    margin-left: 250px;
+    
+}
+/* border */
+.formdivthird2 .formdivthird2b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird2 .formdivthird2b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird2 .formdivthird2b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+/* border */
+.formdivthird2 .formdivthird2c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird2 .formdivthird2c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird2 .formdivthird2c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+
+
+/* border */
+.formdivthird2 .formdivthird2d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird2 .formdivthird2d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird2 .formdivthird2d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+
+/* border */
+.formdivthird2 .formdivthird2e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird2 .formdivthird2e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird2 .formdivthird2e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+/* borderrrrrrrrrrrrr */
+.formdivthird3 .formdivthird3a
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+}
+.formdivthird3 .formdivthird3a h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird3 .formdivthird3a h4 input
+{
+    color: #206FBE;
+    margin-left: 250px;
+    
+}
+/* border */
+.formdivthird3 .formdivthird3b
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird3 .formdivthird3b h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird3 .formdivthird3b h4 input
+{
+    color: #206FBE;
+    margin-left: 300px;
+    
+}
+
+/* border */
+.formdivthird3 .formdivthird3c
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird3 .formdivthird3c h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird3 .formdivthird3c h4 input
+{
+    color: #206FBE;
+    margin-left: 260px;
+    
+}
+
+/* border */
+.formdivthird3 .formdivthird3d
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird3 .formdivthird3d h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird3 .formdivthird3d h4 input
+{
+    color: #206FBE;
+    margin-left: 285px;
+    
+}
+
+/* border */
+.formdivthird3 .formdivthird3e
+{
+    border: 1px solid;
+    color: black;
+    height: 60px;
+    width: 450px;
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+.formdivthird3 .formdivthird3e h4
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 20px;
+}
+.formdivthird3 .formdivthird3e h4 input
+{
+    color: #206FBE;
+    margin-left: 230px;
+    
+}
+.feedbackcomment
+{
+    display: flex;
+    gap: 80px;
+}
+
+.feedbackcomment .feedback h3
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+     font-weight: 500; 
+     line-height: 21px;
+      word-wrap: break-word;
+      text-align: left;
+      margin-left: 450px;
+}
+.feedbackcomment .feedback .feedbacklabel textarea
+{
+    margin-left: 450px;
+
+}
+
+
+.feedbackcomment .comment h3
+{
+    color: #206FBE;
+    font-size: 24px; 
+    font-family: Lexend;
+    font-weight: 500; 
+    line-height: 21px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+
+.buttons .buttonsubmit button
+{
+margin-left: 800px;
+margin-top: 50px;
+height: 50px;
+width: 200px;
+background-color: #0f30e6;
+color: white;
+font-size: 20px;
+font-weight: 200;
+border-radius: 10px;
+}

@@ -1,0 +1,261 @@
+body
+{
+    background: white;
+}
+li
+{
+   list-style-type: none; 
+}
+a
+{
+    text-decoration: none;
+    color: rgb(11, 232, 232);
+}
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: rgb(0,28,73);
+    position: relative;
+
+}
+.nav_brand
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+.nav_item .nav_link
+{
+    font-size: 20px;
+    font-weight: 200px;
+    cursor: pointer !important;
+}
+.nav_menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.nav_toggler div
+{
+width: 3rem;
+height: 0.2rem;
+margin: 0.4rem;
+background-color: darkgray;
+transition: 0.5s ease-in;
+}
+.nav_toggler
+{
+    cursor: pointer;
+    display: none;
+}
+/* ennaa zoom goonu icon nav bar akka mullatu godha. */
+@media screen and (max-width: 768px)
+ {
+    .nav_toggler
+    {
+        display: block;
+    }
+    .nav_menu
+    {
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        background: rgb(0, 28,73);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+
+}
+/* nav active class */
+.nav_active
+{
+    transform: translateX(0);
+}
+
+/* toggle icon animation */
+.toggle .line1
+{
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2
+{
+    opacity: 0;
+}
+.toggle .line3
+{
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.text_container
+{
+    height: 100%;
+    width:40% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 400px;
+    h2
+    {
+        font-size: 30px;
+        color: rgb(0,28,73);
+        letter-spacing: 3px;
+    }
+    h1
+    {
+        font-size: 60px;
+        color: rgb(0,28,73);
+    }
+    .buttons
+    {
+        button
+        {
+      padding: 20px;  
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: rgb(0, 28,73);
+      color: white;
+      margin-right: 20px;
+      cursor: pointer;
+      font-weight: 300;
+        }
+       
+    }
+    .slidingTextContainer
+    {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -120px;
+        white-space: nowrap;
+        color: aqua;
+    }
+}
+.unordered
+{
+display: flex;
+height: 2vh;
+justify-content: left;
+}
+.unordered .ordered_list1 
+
+{
+    height: 60px;
+    width: 30px;
+    background-color: rgb(0, 28,73);
+    margin-top: 80px;
+    margin-left: -30px;
+    padding-left: 13px;  
+    padding-top: 10px;  
+    padding-right: 10px;  
+
+    align-items: center;
+    border-radius: 10px;
+} 
+
+.unordered .ordered_list2
+{
+    height: 60px;
+    width: 30px;
+    background-color: rgb(0, 28,73);
+    margin-top: 80px;
+    margin-left: 20px;
+    padding-left: 13px;  
+    padding-top: 10px;  
+    padding-right: 10px;  
+
+    align-items: center;
+    border-radius: 10px;
+
+} 
+
+.unordered .ordered_list3
+{
+    height: 60px;
+    width: 30px;
+    background-color: rgb(0, 28,73);
+    margin-top: 80px;
+    margin-left: 20px;
+    padding-left: 13px;  
+    padding-top: 10px;  
+    padding-right: 10px;  
+
+    align-items: center;
+    border-radius: 10px;
+
+
+} 
+.border
+{
+
+   margin-top: -200px;
+   margin-left: 980px;
+   border-radius: 10px 10px 0px 0px;
+   opacity: 0.5;
+}
+.addition
+{
+    border: 0px solid;
+    display: flex;
+    gap: 30px;
+}
+
+.addition .second h1
+{
+    margin-left: 270px;
+
+}
+.addition .second1 h1
+{
+    margin-left: 120px;
+   
+}
+.addition .second2 h1
+{
+    margin-left: 120px;
+   
+}.addition .second3 h1
+{
+    margin-left: 120px;
+   
+}
+
+
+
+
+
+.addition2
+{
+    background: rgb(2, 119, 130);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    gap: 140px;
+    color: white;
+
+}
+.addition2 .con1 h2
+{
+    margin-left: 400px;
+}
+.addition3
+{
+    height: 50px;
+    width: 100%;
+    background: rgb(0, 28,73);
+}
+.addition3 h4
+{
+    text-align: center;
+    color: white;
+    margin-top: -10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 15px;
+}

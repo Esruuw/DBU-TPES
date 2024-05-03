@@ -1,0 +1,129 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.mother1
+{
+    display: flex;
+    gap: 50px;
+    margin-left: 200px;
+    margin-top: 60px;
+  
+
+}
+.mother .text
+{
+    color: rgb(37, 38, 44);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+.mother1 .esrael
+{
+    height: 600px;
+    width: 450px;
+    border: 1px solid;
+}
+.mother1 .esrael .image1
+{
+height: 350px;
+width: 450px;
+
+}
+.mother1 .nahom 
+{
+    height: 600px;
+    width: 450px;
+    border: 0.1px solid;   
+}
+
+.mother1 .nahom .image2
+{
+    height: 350px;
+    width: 450px;
+}
+
+.mother1 .nati
+{
+    height: 600px;
+    width: 450px;
+    border: 1px solid;  
+}
+
+.mother1 .nati .image3
+{
+    height: 350px;
+    width:450px;
+}
+
+
+.esrael h4
+{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.esrael p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.esrael .btn1
+{
+height: 40px;
+width: 100px;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: 5px;
+}
+.esrael .btn1:hover
+{
+    background-color: black;
+    color: white;
+}
+.nahom h4
+{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nahom p
+{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nahom .btn2
+{
+height: 40px;
+width: 100px;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: 5px;
+
+}
+.nahom .btn2:hover
+{
+    background-color: black;
+    color: white;
+}
+.nati h4
+{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nati p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.nati .btn3
+{
+height: 40px;
+width: 100px;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: 5px;
+}
+.nati .btn3:hover
+{
+    background-color: black;
+    color: white;
+}
