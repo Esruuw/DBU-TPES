@@ -140,9 +140,9 @@ Dean
    Developers 
   </p>
   
-<p className="esru">Esrael</p>
-<p className="nahi">Nahom</p>
-<p className="nati">Natinael</p>
+<p className="esru">Esrael Wendimu</p>
+<p className="nahi">Nahom Mesfin</p>
+<p className="nati">Natinael Temesgen</p>
 </div>
 {/* borderrrrrrr */}
 {/* adding detail info to kenu, hale, amen class */}
