@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css'
 import photo1 from '../Assets/sam.jpg';
 // import photo2 from '../Assets/miki.jpg';
-
+// 03347892
 const About = () => {
   return (
 <div className='mother'>
