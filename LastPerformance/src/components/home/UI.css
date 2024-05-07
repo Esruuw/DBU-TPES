@@ -33,7 +33,7 @@ a
     font-weight: 200px;
     cursor: pointer !important;
 }
-.nav_menu
+.nav_menu  /*nav menu */
 {
     display: flex;
     align-items: center;
