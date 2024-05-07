@@ -131,6 +131,7 @@ Dean
    </div>
 
    {/* borderrr */}
+   {/* adding detail info to esru, nahi, nati class */}
 <div className="fourthpage">
 <h1>Contact Us</h1>
 <div className='fourth1'>  
@@ -139,16 +140,16 @@ Dean
    Developers 
   </p>
   
-<p className="esru">Esrael</p>
-<p className="nahi">Nahom</p>
-<p className="nati">Natinael</p>
+<p className="esru">Esrael Wendimu</p>
+<p className="nahi">Nahom Mesfin</p>
+<p className="nati">Natinael Temesgen</p>
 </div>
 {/* borderrrrrrr */}
-
+{/* adding detail info to kenu, hale, amen class */}
 <div className="fourthsecond">
 <p>
    Contact Colleges 
-  </p>
+</p>
 <p className="kenu">Kenean</p>
 <p className="hale">Halelujah</p>
 <p className="amen">Amen</p>
@@ -156,13 +157,14 @@ Dean
 
 
 {/* borderrrrrrr */}
+{/* adding detail info to rich, eba, roba class */}
 <div className="fourththird">
 <p>
    Other 
   </p>
-<p className="rich">Kenean</p>
-<p className="eba">Halelujah</p>
-<p className="roba">Amen</p>
+<p className="rich">Solan</p>
+<p className="eba">Meerii</p>
+<p className="roba">Wanduu</p>
 </div>
 
 </div>
