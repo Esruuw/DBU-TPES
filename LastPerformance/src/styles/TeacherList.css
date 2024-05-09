@@ -71,3 +71,8 @@ color: #526d82;
     font-size: 20px;
     font-weight: 20px;
 }
+
+.teacher--list .list--header h2
+{
+align-items: center;
+}
