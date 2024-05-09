@@ -16,7 +16,7 @@ function App() {
      {/* <UI/> */}
 
 
-  <BrowserRouter>
+<BrowserRouter>
 <Routes>
   <Route index element = { <Header/ >}/>
   <Route path="/header" element={<Header />} />
