@@ -12,6 +12,8 @@ import FirstSemister from './components/FirstSemister.jsx';
 import SecondSemister from './components/SecondSemister.jsx';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TeacherList from './components/TeacherList.jsx';
+import Forms from './pages/Forms.jsx';
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
           <Route path="/resultt" element={<Resultt />} />
           <Route path="/firstsem" element={<FirstSemister />} />
           <Route path="/secondsem" element={<SecondSemister />} />
+          <Route path="/teachers_list" element={<TeacherList />} />
+          <Route path="/teachers_detail2" element={<Forms />} />
+
        </Routes>
       </div>
     </Router>

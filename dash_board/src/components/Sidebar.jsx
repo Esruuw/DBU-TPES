@@ -61,6 +61,8 @@ import TeacherList from './TeacherList';
 import '../styles/Content.css';
 import Content from'./Content';
 import {BiHelpCircle, } from 'react-icons/bi';
+import Forms from '../pages/Forms.jsx';
+
 import {
     BiHome, 
     BiBookAlt, 
@@ -118,7 +120,7 @@ render()
              Main
             </a>
 
-            <a href="Resultt" className='item activate'>
+            <a href="/teachers_detail2" className='item activate'>
             <BiTask className='icon'/>
              Result
             </a>
