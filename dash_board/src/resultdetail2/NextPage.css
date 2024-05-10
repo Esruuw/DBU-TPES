@@ -1,14 +1,27 @@
 .teacher--list {
     font-family: Arial, sans-serif;
   }
-  
-  .list--header {
+  .list--header{
+    display: flex;
+    gap: 250px;
+  }
+  .list--header h2 {
     background-color: #f2f2f2;
     padding: 10px;
     text-align: center;
     width: 10%; /* Set fixed width for header */
   }
   
+  .list--header a {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    width: 10%; /* Set fixed width for header */
+    text-decoration: dotted;
+    cursor: pointer;
+    color:  #1b2328;
+    font-size: 20px;
+  }
   .list--container {
     width: 100%;
     border-collapse: collapse;
