@@ -8,6 +8,7 @@ import StudForm from './components/StudForm/StudForm.jsx';
 import About from './components/About/about.jsx';
 import Header from './components/Header/header.jsx'; 
 import Forms from './pages/Forms.jsx';
+import DashbResult from './page2/DashbResult.jsx';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
   <Route path="/login" element={<Login />} />
   <Route path="/studf" element={<StudForm />} />
   <Route path="/about" element={<About />} />
+  <Route path="/dash-result" element={<DashbResult />} />
 
 </Routes>
 </BrowserRouter>

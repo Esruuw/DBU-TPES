@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import TeacherList from "../components/studentform/TeacherList";
-import './Forms.css';
-import Studentform from "../components/studentform/studentform";
+import './DashbResult.css';
+import NextPage from "../components/TeachersPage/NextPage";
+import { ThirdDetail } from "../components/TeachersPage/ThirdDetail";
 
-export default function Forms() {
+export default function DashbResult() {
   const [current, setCurrent] = useState("teacherList");
   const [selectedTeacher, setSelectedTeacher] = useState();
 
@@ -15,8 +16,6 @@ export default function Forms() {
           {/* <h2>WELL COME TO TEACHER EVALUATION FORM</h2> */}
         </div>
         <h3> 
-          <h4>select One of Teacher to Fill Evaluation Form!</h4>
-        
         {current && current === "evaluationForm" &&(
 
         <button onClick={()=>setCurrent("teacherList")}>back to teacher list</button>
@@ -31,7 +30,7 @@ export default function Forms() {
       )}
 
       {current && current === "evaluationForm" && (
-        <Studentform teacher={selectedTeacher} /> 
+        <NextPage teacher={selectedTeacher} /> 
       )}
     </div>
   );
