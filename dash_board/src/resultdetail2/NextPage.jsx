@@ -55,7 +55,7 @@ function NextPage() {
           ))}
         </tbody>
       </table>
-      <ThirdDetail teachers={teachers} /> {/* Pass teachers data to ThirdDetail */}
+      <ThirdDetail teachers={teachers} /> Pass teachers data to ThirdDetail
     </div>
   );
 }

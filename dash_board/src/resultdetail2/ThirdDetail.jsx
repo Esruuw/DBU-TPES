@@ -21,7 +21,7 @@ export function ThirdDetail({ teachers }) {
   };
 
   const renderDistribution = (criteria) => {
-    const distribution = calculateRatingDistribution(criteria);
+  const distribution = calculateRatingDistribution(criteria);
 
     return (
       <div className="column">
@@ -39,7 +39,7 @@ export function ThirdDetail({ teachers }) {
     <div className='c1'>
     <div className='cont'><h1>Teachers Average Result</h1></div>
     <div className="containerr">
-   
+    
       {renderDistribution('performance')}
       {renderDistribution('punctuality')}
       {renderDistribution('subjectKnowledge')}

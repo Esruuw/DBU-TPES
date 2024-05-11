@@ -18,6 +18,8 @@ const Deptid = () => {
         } catch (error) {
             console.error('Error:', error);
             alert('Error checking ID');
+
+            
         }
     };
 
