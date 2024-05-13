@@ -34,7 +34,11 @@ export function ThirdDetail({ teachers }) {
       </div>
     );
   };
-
+  // logout=()=>
+  //   {
+  // window.localStorage.clear();
+  // window.location.href="./login"
+  //   }
   return (
     <div className='c1'>
     <div className='cont'><h1>Teachers Average Result</h1></div>
@@ -48,6 +52,8 @@ export function ThirdDetail({ teachers }) {
       {renderDistribution('classRoomManagement')}
       {renderDistribution('communicationWithStudent')}
     </div>
+    {/* <button onClick={this.logout}  className='logoutt'>Logout</button>     */}
+
     </div>
   );
 }

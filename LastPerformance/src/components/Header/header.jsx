@@ -36,9 +36,8 @@ function Header()
     </a>
     </li>
     <li className="list_nav"> 
-    <a href="#" className="nav_link">
-    portifolio
-    </a>
+    <a href="RegistrationForm" className="nav_link">
+     Login    </a>
     </li>
         
     </nav>
@@ -55,16 +54,16 @@ function Header()
     of type and scrambled it to make a type specimen book. </p>
     <div className='buttons'>
     <button>
-    <a href="RegistrationForm" className="nav_link">
-    Teacher
+    <a href="/login" className="nav_link">
+    Login
    </a> 
    </button>
 
-   <button >
+   {/* <button >
    <a href="RegistrationForm" className="nav_link">
     Student
    </a>  
-   </button>
+   </button> */}
     </div>
   
 </div>
