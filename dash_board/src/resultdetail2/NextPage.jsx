@@ -37,6 +37,7 @@ function NextPage() {
             <th>Interaction With Student</th>
             <th>Classroom Management</th>
             <th>Communication With Student</th>
+
           </tr>
         </thead>
         <tbody>

@@ -1,4 +1,4 @@
-.list--header
+/* .list--header
 {
     display: flex;
     margin: 3rem 0;
@@ -69,4 +69,62 @@ color: #526d82;
     margin-left: 100px;
     font-size: 20px;
     font-weight: 20px;
-}
+} */
+
+
+.teacher--list {
+    width: 100%;
+  }
+  .teacher--list .list--header h2
+  {
+
+    font-size: 20px;
+    width: 130px;
+  }
+  .teacher--table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .teacher--table th,
+  .teacher--table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px; 
+  }
+  
+  .teacher--table th {
+    background-color: #f2f2f2; /* Color for header row */
+  }
+  
+  .table--header th {
+    background-color: white; /* Color for header cells */
+    color: black;
+  }
+  
+  .table--header th,
+  .table--header td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table--header td:last-child,
+  .teacher--table td:last-child {
+    text-align: center; /* Center align delete button */
+  }
+  
+  button {
+    background-color:  #526d82;; /* Red color for delete button */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #d32f2f; /* Darker red color on hover */
+  }
+  

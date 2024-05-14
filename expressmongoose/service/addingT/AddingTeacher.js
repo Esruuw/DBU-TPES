@@ -7,9 +7,9 @@ require("../../models/AddTeacher");
 const teacherModel = mongoose.model("AddTeacherInfo");
 
 const createOne = async (req, res) => {
-  const { teacherId, name, course, department } = req.body;
+  const { teacherId, name, course, department, year, semester} = req.body;
 
-  if (!teacherId || !name || !course || !department) {
+  if (!teacherId || !name || !course || !department || !year || !semester) {
     return res.status(400).send("please the whole input field!");
   }
 
@@ -24,6 +24,8 @@ const createOne = async (req, res) => {
       name,
       course,
       department,
+      year,
+      semester,
     });
     return res.status(201).send(newTeacher);
   } catch (err) {

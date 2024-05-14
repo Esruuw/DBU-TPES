@@ -9,13 +9,12 @@ import email_icon from "../assets/email.png";
 import password_icon from "../assets/password.png";
 import API_URL from "../config";
 
-const AddTeachers = () => {
+const AddStudents = () => {
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
   const [department, setDepartment] = useState("");
   const [teacherId, setTeacherId] = useState("");
   const [year, setyear] = useState("");
-  const [semester, setsemester] = useState("");
 
   const [error, setError] = useState(null);
 
@@ -28,7 +27,6 @@ const AddTeachers = () => {
         course,
         department,
         year,
-        semester,
       });
       if (response.status === 201) {
         setError("teacher added successfully.");
@@ -103,16 +101,6 @@ const AddTeachers = () => {
               placeholder="year..."
             />
           </div>
-
-          <div className="input">
-            <img src={email_icon} alt="" />
-            <input
-              type="text"
-              value={semester}
-              onChange={(e) => setsemester(e.target.value)}
-              placeholder="semester..."
-            />
-          </div>
         </div>
 
         <div className="submit-container">
@@ -126,4 +114,4 @@ const AddTeachers = () => {
     </form>
   );
 };
-export default AddTeachers;
+export default AddStudents;

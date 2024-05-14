@@ -127,12 +127,12 @@ render()
 
             <Link to="/addteachers" className='item'>
              <BiSolidReport  className='icon'/>
-             Add T
+             Add Teacher
             </Link>
 
             <a href="#" className='item'>
             <BiStats  className='icon'/>
-            Message
+            Add Student
             </a>
 
             <a href="#" className='item'>

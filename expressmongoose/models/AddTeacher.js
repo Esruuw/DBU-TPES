@@ -5,6 +5,8 @@ const AddTeacherInfoSchema = new mongoose.Schema(
         name: String,
         course:String,
         department: String,
+        year: String,
+        semester: String,
     },
     {
         collection: "AddTeacherInfo",
