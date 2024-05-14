@@ -21,13 +21,14 @@ const TeacherList = () => {
   }, []);
 
   const handleDeleteTeacher = async (teacherId) => {
+    // console.log('teacher id: ', teacherId)
     try {
-      const response = await axios.delete(`${API_URL}/teacher/${teacherId}`);
+      const response = await axios.delete(`${API_URL}/teacher/deleteById/${teacherId}`);
       if (response.status === 200) {
         setTeachers(teachers.filter((teacher) => teacher._id !== teacherId));
       }
     } catch (error) {
-      console.error("Error deleting teacher:", error);
+      // console.error("Error deleting teacher:", error);
     }
   };
 

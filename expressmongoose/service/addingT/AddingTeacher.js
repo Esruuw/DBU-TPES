@@ -18,8 +18,14 @@ const createOne = async (req, res) => {
     return res.status(406).send("Teacher id must be unique!");
   }
 
+  const password = '1234';
+
+  // hexadecimal
+  // const hash = bcrypt
+
   try {
     const newTeacher = await teacherModel.create({
+      password,
       teacherId,
       name,
       course,
@@ -42,4 +48,13 @@ const findAll = async (req, res) => {
   }
 };
 
-module.exports = { createOne, findAll };
+const deleteById = async (req, res) => {
+  const { id } = req.params;
+  const deletedTeacher = await teacherModel.deleteOne({ _id: id });
+  if (!deletedTeacher) {
+      return res.status(404).send({ message: "Teacher id not found" });
+  }
+  return res.status(200).send({ message: "Teacher with the given id has been deleted successfully" });
+}
+
+module.exports = { createOne, findAll, deleteById };
