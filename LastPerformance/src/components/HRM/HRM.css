@@ -1,0 +1,51 @@
+.teacher--list {
+    font-family: Arial, sans-serif;
+  }
+  .list--header{
+    display: flex;
+    gap: 250px;
+  }
+  .list--header h2 {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    width: 10%; /* Set fixed width for header */
+  }
+  
+  .list--header a {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    width: 10%; /* Set fixed width for header */
+    text-decoration: dotted;
+    cursor: pointer;
+    color:  #1b2328;
+    font-size: 20px;
+  }
+  .list--container {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .list--container th,
+  .list--container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Align text to center */
+    width: 12%; /* Set fixed width for td */
+  }
+  
+  .list--container th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .list--container tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .list--container tbody tr:hover {
+    background-color: #ddd;
+  }
+  
