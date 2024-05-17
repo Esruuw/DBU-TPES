@@ -17,6 +17,7 @@ const courses = [
     title: "Second Semister",
     icon: <BiBuilding />,
   },
+
 ];
 
 const Card = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./ThirdDetail.css";
 
-export function ThirdDetail({ teachers }) {
+export function ThirdDetail({ evaluations }) {
   const calculateRatingDistribution = (criteria) => {
     const distribution = {
       veryLow: 0,
@@ -12,9 +12,12 @@ export function ThirdDetail({ teachers }) {
     };
     let totalRatings = 0;
 
-    teachers.forEach((teacher) => {
-      distribution[teacher[criteria]]++;
-      totalRatings++;
+    evaluations.forEach((evaluation) => {
+      const rating = evaluation[criteria];
+      if (rating !== undefined) {
+        distribution[rating]++;
+        totalRatings++;
+      }
     });
 
     return { distribution, totalRatings };
@@ -49,7 +52,7 @@ export function ThirdDetail({ teachers }) {
   };
 
   // Calculate average percentage of all criteria
-  const criteriaList = ['performance', 'punctuality', 'subjectKnowledge', 'assesmentMethod', 'interactionWithStudent', 'classRoomManagement', 'communicationWithStudent'];
+  const criteriaList = ['performance', 'punctuality', 'subjectKnowledge', 'assesmentMethod', 'interactionWithStudent', 'classRoomManagement', 'timeManagement'];
   const totalPercentages = criteriaList.reduce((sum, criteria) => {
     const { distribution, totalRatings } = calculateRatingDistribution(criteria);
     const average = (
@@ -70,13 +73,7 @@ export function ThirdDetail({ teachers }) {
     <div className='c1'>
       <div className='cont'><h1>Teachers Average Result</h1></div>
       <div className="containerr">
-        {renderDistribution('performance')}
-        {renderDistribution('punctuality')}
-        {renderDistribution('subjectKnowledge')}
-        {renderDistribution('assesmentMethod')}
-        {renderDistribution('interactionWithStudent')}
-        {renderDistribution('classRoomManagement')}
-        {renderDistribution('communicationWithStudent')}
+        {criteriaList.map((criteria) => renderDistribution(criteria))}
         <div className="column">
           <h2>Average Percentage of All Criteria:</h2>
           {criteriaList.map((criteria) => {
@@ -91,7 +88,7 @@ export function ThirdDetail({ teachers }) {
             ).toFixed(2);
             const percentage = ((average / 5) * 100).toFixed(1);
             return (
-              <p>{criteria}: {percentage}%</p>
+              <p key={criteria}>{criteria}: {percentage}%</p>
             );
           })}
           <p>Total Average: {averagePercentage}%</p>

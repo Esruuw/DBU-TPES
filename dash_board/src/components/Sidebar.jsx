@@ -130,16 +130,23 @@ render()
              Add Teacher
             </Link>
 
-            <a href="#" className='item'>
+            <a href="/add-stud" className='item'>
             <BiStats  className='icon'/>
             Add Student
             </a>
 
-            <a href="#" className='item'>
+            <a href="/stud-list" className='item'>
             <BiMessage  className='icon'/>
-            Help
+            List of Students
             </a>
-
+            <a href="/criteria-page" className='item'>
+            <BiMessage  className='icon'/>
+            Add Criteria           
+            </a>
+            <a href="/stud-list" className='item'>
+            <BiMessage  className='icon'/>
+             See Added Criteria
+            </a>
             <a href="#" className='item'>
             <BiHelpCircle  className='icon'/>
             <button onClick={this.logout}  className='logoutt'>Logout</button>    

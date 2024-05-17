@@ -1,18 +1,16 @@
-.container
-{
-    display: flex !important;
+.container {
+    display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 50px ;
-    height: 800px !important;
-    width: 700px !important;
-    /* background: #fff; */
-    background: #0074B7;
-    padding-bottom: 30px ;
+    margin-top: 50px;
+    min-height: 1000px; /* Changed to min-height */
+    width: 700px;
+    background: #05445E;
+    padding-bottom: 30px;
     border-radius: 10px;
 }
-.header
-{
+
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,94 +18,102 @@
     width: 100%;
     margin-top: 30px;
 }
-.text
-{
+
+.text {
     color: white;
     font-size: 48px;
     font-weight: 700;
 }
-.underline
-{
+
+.underline {
     width: 61px;
     height: 6px;
     background: rgb(4, 12, 74);
     border-radius: 9px;
 }
-.inputs
-{
+
+.inputs {
     margin-top: 55px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.input /* input css edit here*/
-{
-display: flex;
-align-items: center;
-margin: auto;
-width: 480px;
-height: 80px;
-background: #eaeaea;
-border-radius: 6px;
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%; /* Changed to percentage */
+    max-width: 480px; /* Added max-width */
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
 }
 
-.input img
-{
-    margin:0px 30px;
+.input img {
+    margin: 0px 30px;
 }
-.input  input
-{
+
+.input input {
     height: 50px;
-    width: 400px;
+    width: calc(100% - 90px); /* Adjusted width */
     background: transparent;
     border: none;
     outline: none;
     color: #797979;
     font-size: 19px;
 }
-.forgot-password
-{
-   padding-left: 62px;
-   margin-top: 27px;
-   color: white;
-   font-size: 18px; 
-   margin-left: 270px;
+
+.forgot-password {
+    padding-left: 62px;
+    margin-top: 27px;
+    color: white;
+    font-size: 18px;
+    margin-left: 270px;
 }
-.forgot-password span
-{
+
+.forgot-password span {
     color: rgb(4, 12, 74);
     cursor: pointer;
 }
-.submit-container
-{
+
+.submit-container {
     display: flex;
     flex-direction: row;
     gap: 30px;
     margin: 60px auto;
-    
 }
-.submit
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  height: 59px;
-  color: #fff;
-  background: black;
-  border-radius: 50px;
-  font-size: 19px;
-  font-weight: 700;
-  cursor: pointer;  
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #fff;
+    background: black;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
 }
-.gray
-{
-    background: #EAEAEA;
+
+.gray {
+    background: #eaeaea;
     color: #676767;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjusted width */
+    }
 
+    .input {
+        width: 100%; /* Set width to 100% on smaller screens */
+        max-width: none; /* Removed max-width */
+    }
 
-
-
-
+    .input input {
+        width: calc(100% - 90px); /* Adjusted width */
+    }
+}

@@ -15,6 +15,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TeacherList from './components/TeacherList.jsx';
 import Forms from './pages/Forms.jsx';
 import { ThirdDetail } from './resultdetail2/ThirdDetail.jsx';
+import AddStudents from './addstudents/AddStudent.jsx';
+import StudentsList from './studentslist/StudentsList.jsx';
+import AddCriteria from './addcriteria/AddCriteria.jsx';
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
           <Route path="/teachers_list" element={<TeacherList />} />
           <Route path="/teachers_detail2" element={<Forms />} />
           <Route path="/third-detail" element={<ThirdDetail />} />
+          <Route path="/add-stud" element={<AddStudents />} />
+          <Route path="/stud-list" element={< StudentsList/>} />
+          <Route path="/criteria-page" element={< AddCriteria/>} />
 
        </Routes>
       </div>

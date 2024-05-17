@@ -49,7 +49,7 @@ export default function RegistrationForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="container">
+      <div className="container5">
         <div className="header">
           <div className="text">Registration Form</div>
           <div className="underline"></div>
@@ -118,3 +118,4 @@ export default function RegistrationForm() {
     </form>
   );
 }
+

@@ -1,6 +1,6 @@
 .content
 {
-    width: 75%;
+    width: 85%;
 }
 
 .content--header
@@ -36,6 +36,7 @@
     flex-direction: column;
     gap: 20px;
     transition: 0.5s ease-in-out;
+    width: 85%;
 }
 .card :hover
 {
