@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const performanceFormSchema = new mongoose.Schema(
+const PeerPerformanceFormSchema = new mongoose.Schema(
    {
       studentId: String,
       teacherId: String,
@@ -16,7 +16,7 @@ const performanceFormSchema = new mongoose.Schema(
     timeManagement: String,
    },
    {
-    collection : "PerformanceForm",
+    collection : "PeerPerformanceForm",
    }
 );
-mongoose.model("PerformanceForm", performanceFormSchema);
+mongoose.model("PeerPerformanceForm", PeerPerformanceFormSchema);

@@ -25,7 +25,7 @@ const createOne = async (req, res) => {
 
   try {
     const newTeacher = await teacherModel.create({
-      password,
+      // password,
       teacherId,
       name,
       course,

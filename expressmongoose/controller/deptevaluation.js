@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { createOne, findAll, findById, findManyByTeacherId } = require('../service/evaluation/CR_Evaluation');
+const { createOne, findAll, findById, findManyByTeacherId } = require('../service/DeptEvaluation/Dept_Eval_Form');
 
 router.post('/createOne', createOne);
 router.get('/findAll', findAll);
