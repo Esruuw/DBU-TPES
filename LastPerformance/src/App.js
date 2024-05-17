@@ -11,6 +11,7 @@ import Forms from './pages/Forms.jsx';
 import DashbResult from './page2/DashbResult.jsx';
 // import EvaluatePeerForm from './components/EvaluatePeerForm/evaluatepeerform.jsx';
 import AllOne from './page3/AllOne.jsx';
+import TeacherP from './page4/TeacherP.jsx';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
   <Route path="/about" element={<About />} />
   <Route path="/dash-result" element={<DashbResult />} />
   <Route path="/evaluate_peer" element={<AllOne />} />
+  <Route path="/teachers_page" element={<TeacherP />} />
 
 </Routes>
 </BrowserRouter>
