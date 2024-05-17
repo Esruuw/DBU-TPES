@@ -9,6 +9,8 @@ import About from './components/About/about.jsx';
 import Header from './components/Header/header.jsx'; 
 import Forms from './pages/Forms.jsx';
 import DashbResult from './page2/DashbResult.jsx';
+// import EvaluatePeerForm from './components/EvaluatePeerForm/evaluatepeerform.jsx';
+import AllOne from './page3/AllOne.jsx';
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
   <Route path="/login" element={<Login />} />
   <Route path="/about" element={<About />} />
   <Route path="/dash-result" element={<DashbResult />} />
+  <Route path="/evaluate_peer" element={<AllOne />} />
 
 </Routes>
 </BrowserRouter>

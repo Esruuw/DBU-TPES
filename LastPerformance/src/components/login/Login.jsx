@@ -51,7 +51,7 @@ export default function Login() {
   
     return (
       <form onSubmit={handleSubmit}>
-        <div className='container'>
+        <div className='container1'>
           <div className='header'>
             <div className='text'>Registration Form</div>
             <div className='underline'></div>

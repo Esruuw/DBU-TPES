@@ -32,7 +32,12 @@ function Header()
 
     <li className="list_nav"> 
     <a href="#" className="nav_link">
-    service
+    Members
+    </a>
+    </li>
+    <li className="list_nav"> 
+    <a href="#" className="nav_link">
+    Contact Us
     </a>
     </li>
     <li className="list_nav"> 
@@ -53,17 +58,17 @@ function Header()
      text ever since the 1500s, when an unknown printer took a galley 
     of type and scrambled it to make a type specimen book. </p>
     <div className='buttons'>
-    <button>
-    <a href="/login" className="nav_link">
-    Login
+    <button className='button1'>
+    <a href="RegistrationForm" className="nav_link">
+    Teacher
    </a> 
    </button>
 
-   {/* <button >
+   <button >
    <a href="RegistrationForm" className="nav_link">
     Student
    </a>  
-   </button> */}
+   </button>
     </div>
   
 </div>
@@ -101,6 +106,14 @@ Ensuring Standards: Evaluations help ensure that teachers meet certain education
    and are accountable for their students' performance.
 </p>
 <p className='par4'>
+Alignment with Student Needs: Evaluations can help teachers adapt their methods to better
+suit the diverse learning needs of their students.
+</p>
+<p className='par5'>
+Alignment with Student Needs: Evaluations can help teachers adapt their methods to better
+suit the diverse learning needs of their students.
+</p>
+<p className='par6'>
 Alignment with Student Needs: Evaluations can help teachers adapt their methods to better
 suit the diverse learning needs of their students.
 </p>

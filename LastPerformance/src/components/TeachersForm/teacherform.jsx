@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import "./studentform.css";
+import "./teacherform.css";
 import API_URL from "../../config";
 
-const Studentform = ({ teacher }) => {
+const Teacherform = ({ teacher }) => {
   const [performance, setPerformance] = useState("");
   const [punctuality, setPunctuality] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -258,7 +258,7 @@ const Studentform = ({ teacher }) => {
         </div> */}
 
           {/* borderrrrrrrrrrrrrrr */}
-          <div className="formdivthird3">
+          {/* <div className="formdivthird3">
             <h2>Class Room</h2>
             {options.map((option) => (
               <div key={option.value} className="formdivthird3b">
@@ -280,8 +280,8 @@ const Studentform = ({ teacher }) => {
                 </h4>
               </div>
             ))}
-          </div>
-          <div className="formdivthird3">
+          </div> */}
+          {/* <div className="formdivthird3">
             <h2>Class Room Management</h2>
             {options.map((option) => (
               <div key={option.value} className="formdivthird3b">
@@ -303,9 +303,9 @@ const Studentform = ({ teacher }) => {
                 </h4>
               </div>
             ))}
-          </div>
+          </div> */}
 
-          <div className="formdivthird3">
+          {/* <div className="formdivthird3">
             <h2>Time Management</h2>
             {options.map((option) => (
               <div key={option.value} className="formdivthird3b">
@@ -327,7 +327,7 @@ const Studentform = ({ teacher }) => {
                 </h4>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="feedbackcomment">
@@ -371,4 +371,4 @@ const Studentform = ({ teacher }) => {
     </form>
   );
 };
-export default Studentform;
+export default Teacherform;

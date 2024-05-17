@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import TeacherList from "../components/studentform/TeacherList";
-import './DashbResult.css';
 import NextPage from "../components/TeachersForm/TeacherList";
-// import { ThirdDetail } from "../components/TeachersForm/teacherform";
+import "./AllOne.css"
+import TeacherList from "../components/studentform/TeacherList";
+import Teacherform from "../components/TeachersForm/teacherform";
+// import NextPage from "../components/TeachersPage/NextPage";
+// import ThirdDetail  from "./TeachersPage/ThirdDetail";
 
-export default function DashbResult() {
+export default function AllOne() {
   const [current, setCurrent] = useState("teacherList");
   const [selectedTeacher, setSelectedTeacher] = useState();
 
@@ -30,7 +32,7 @@ export default function DashbResult() {
       )}
 
       {current && current === "evaluationForm" && (
-        <NextPage teacher={selectedTeacher} /> 
+        <Teacherform teacher={selectedTeacher} /> 
       )}
     </div>
   );
