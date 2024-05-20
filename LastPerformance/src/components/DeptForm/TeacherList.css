@@ -1,0 +1,59 @@
+/* .teacher--list {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  }
+  
+  .list--header {
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  
+  .list--header h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .list--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .list {
+    background-color: #221f1f;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list:hover {
+    background-color: #eaeaea;
+  }
+  
+  .teacher--detail {
+    text-align: center;
+  }
+  
+  .teacher--detail h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .spancourse,
+  .spanother {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #777;
+  }
+   */

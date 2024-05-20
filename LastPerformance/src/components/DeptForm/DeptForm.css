@@ -1,0 +1,127 @@
+.container5 {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 8px 20px black;
+}
+
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .formdiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10%;
+    margin-top: 3%;
+  }
+  
+  .formdiv1,
+  .formdiv2,
+  .formdiv3 {
+    flex: 1;
+  }
+  
+  .formdiv1b,
+  .formdiv2b,
+  .formdiv3b {
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .formdivsecond {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10%;
+
+  }
+  
+  .formdivsecond1,
+  .formdivsecond2 {
+    flex: 1;
+  }
+  
+  .formdivsecond1b,
+  .formdivsecond2b {
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .formdivthird {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10%;
+
+  }
+  
+  .formdivthird3 {
+    flex: 1;
+  }
+  
+  .formdivthird3b {
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .feedbackcomment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10%;
+
+  }
+  
+  .feedback,
+  .comment {
+    flex: 1;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+  
+  .buttonsubmit button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttonsubmit button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .formdiv,
+    .formdivsecond,
+    .formdivthird,
+    .feedbackcomment {
+      flex-direction: column;
+    }
+  }
+  
+  /* Add more media queries as needed */
+  

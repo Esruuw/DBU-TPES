@@ -15,37 +15,44 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
       }
     };
     getAllTeachers();
-  }, [setTeachers]);
+  }, []);
 
-  const handleNewEvaluation = (selectedTeacher) => {
-    setSelectedTeacher(selectedTeacher);
+  const handleTeacherClick = (teacher) => {
+    setSelectedTeacher(teacher);
     setCurrent("evaluationForm");
   };
 
   return (
-    <div className="teacher--list">
-      <div className="list--header">
-        <h2>List Of Teachers</h2>
-    
+    <div className="teacher--listB">
+      <div className="list--headerB">
+        {/* <h2>List Of Teachers</h2> */}
+        <a href="">  
+             <h2>Evaluate Peer</h2>
+        </a>
       </div>
 
-      <div className="list--container">
-        {teachers &&
-          teachers.map((teacher) => ( 
-            <div className="list"
-            key={teacher._id}
-            onClick={()=>handleNewEvaluation(teacher)}>
-              <div className="teacher--detail">
-                <img src={teacher.image} alt={teacher.name} />
-                <h2> {teacher.name} </h2>
-              </div>
-        
-
-          <span className="spancourse"> {teacher.course} </span>
-          <span className="spanother"> {teacher.department} </span> 
-    
-            </div>
-          ))}
+      <div className="list--containerB">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Department</th>
+            </tr>
+          </thead>
+          <tbody>
+            {teachers &&
+              teachers.map((teacher) => (
+                <tr
+                  key={teacher._id}
+                  onClick={() => handleTeacherClick(teacher)}>
+                  <td>{teacher.name}</td>
+                  <td>{teacher.course}</td>
+                  <td>{teacher.department}</td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

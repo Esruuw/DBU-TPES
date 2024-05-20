@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/TeacherList.css";
+import "./TeachersList.css";
 import axios from "axios";
 import API_URL from "../../config";
 
-const TeacherList = ({ setCurrent, setSelectedTeacher }) => {
+const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
   const [teachers, setTeachers] = useState();
 
   useEffect(() => {
@@ -15,31 +15,31 @@ const TeacherList = ({ setCurrent, setSelectedTeacher }) => {
       }
     };
     getAllTeachers();
-  }, [setTeachers]);
+  }, []);
 
-  const handleNewEvaluation = (selectedTeacher) => {
-    setSelectedTeacher(selectedTeacher);
+  const handleTeacherClick = (teacher) => {
+    setSelectedTeacher(teacher);
     setCurrent("evaluationForm");
   };
 
   return (
-    <div className="teacher--listA">
-      <div className="list--headerA">
+    <div className="teacher--list">
+      <div className="list--header">
         <h2>List Of Teachers</h2>
-    
       </div>
 
-      <div className="list--containerA">
+      <div className="list--container">
         {teachers &&
-          teachers.map((teacher) => ( 
+          teachers.map((teacher) => (
             <div className="list"
-            key={teacher._id}
-            onClick={()=>handleNewEvaluation(teacher)}>
-              <div className="teacher--detailA">
+              key={teacher._id}
+              onClick={() => handleTeacherClick(teacher)}>
+              <div className="teacher--detail">
+                <img src={teacher.image} alt={teacher.name} />
                 <h2> {teacher.name} </h2>
               </div>
               <span className="spancourse"> {teacher.course} </span>
-              <span className="spanother"> {teacher.department} </span> 
+              <span className="spanother"> {teacher.department} </span>
             </div>
           ))}
       </div>
@@ -47,4 +47,4 @@ const TeacherList = ({ setCurrent, setSelectedTeacher }) => {
   );
 };
 
-export default TeacherList;
+export default TeachersList;

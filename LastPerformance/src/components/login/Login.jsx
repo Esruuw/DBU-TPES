@@ -1,7 +1,9 @@
-import React, {  useState } from 'react';
+// Login.jsx
+
+import React, { useState } from 'react';
 import axios from 'axios';
-import {useNavigate} from 'react-router-dom'
-// import './Login.css';
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 import email_icon from '../Assets/email.png';
 import password_icon from '../Assets/password.png';
 import API_URL from "../../config";
@@ -24,57 +26,60 @@ export default function Login() {
         localStorage.setItem("token", userFound.token);
 
         console.log('response.data', response.data)
-        if(userFound.user.role === "student"){
-        // setError("Successfully logged in");
-        localStorage.setItem('studentId', response.data.user.dbuId)
-        navigate('/Studentform');
-        }else if (userFound.user.role === "admin"){
+        if (userFound.user.role === "student") {
+          // setError("Successfully logged in");
+          localStorage.setItem('studentId', response.data.user.dbuId)
+          navigate('/Studentform');
+        } else if (userFound.user.role === "teacher") {
+          localStorage.setItem('studentId', response.data.user.dbuId)
+          navigate('/teachers_page');
+        } else if (userFound.user.role === "admin") {
           // navigate('/mm');
           alert("only students can access this page");
         }
       }
     } catch (err) {
-      if(err.response && err.response.status === 400){
+      if(err.response && err.response.status === 400) {
         setError("email and password should not be null")
-       }  else   if(err.response && err.response.status === 404){
+      } else if(err.response && err.response.status === 404) {
         setError("This email is not registered.")
-       } else if (err.response && err.response.status === 403) {
-       setError("email or password incorrect")
-      }else if(err.response && err.response.status === 500){
+      } else if (err.response && err.response.status === 403) {
+        setError("email or password incorrect")
+      } else if(err.response && err.response.status === 500) {
         setError("internal server error");
-      }else{
+      } else {
         setError("something went wrong");
       }
     } 
   }
   
-  
-    return (
+  return (
+    <div id="login-page">
       <form onSubmit={handleSubmit}>
-        <div className='container1'>
-          <div className='header'>
-            <div className='text'>Registration Form</div>
-            <div className='underline'></div>
+        <div id='container1Input'>
+          <div id='headerA'>
+            <div id='text'>LoginForm</div>
+            <div id='underline'></div>
           </div>
           {error && (
-          <div style={{ backgroundColor: "maroon", textAlign: "center" }}>
-            {error}
-          </div>
-        )}
-          <div className='inputs'>
-            <div className='input'>
-              <img src={email_icon} alt="logo" />
+            <div className="error">
+              {error}
+            </div>
+          )}
+          <div id='inputsA'>
+            <div id='inputAa'>
+              <img src={email_icon} alt="logo" id="imgb" />
               <input
                 type="email"
                 placeholder='Email...'
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                 autoComplete="off" 
+                autoComplete="off" 
               />
             </div>
-            <div className='input'>
-              <img src={password_icon} alt="" />
+            <div id='inputAa'>
+              <img src={password_icon} alt="" id="imgb"/>
               <input
                 type="password"
                 placeholder='Password...'
@@ -85,9 +90,9 @@ export default function Login() {
               />
             </div>
           </div>
-          <div className='forgot-password'>Lost Password? <span>Click Here!</span></div>
-          <div className='submit-container'>
-            <div className='submit'>
+          <div id='forgot-password'>Lost Password? <span>Click Here!</span></div>
+          <div id='submit-container'>
+            <div id='submit'>
               <button type="submit" className="reg-button">
                 Login
               </button>
@@ -95,6 +100,6 @@ export default function Login() {
           </div>
         </div>
       </form>
-    )
+    </div>
+  )
 }
-// export default Login;

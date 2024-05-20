@@ -24,7 +24,7 @@ const Deptid = () => {
     };
 
     return (
-        <div className='container'>
+        <div className='container4'>
             <div className='header'>
                 <div className='text'>Registration Form</div>
                 <div className='underline'></div>

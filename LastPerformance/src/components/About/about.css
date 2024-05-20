@@ -1,131 +1,83 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
-.mother1
-{
+/* about.css */
+
+.mother {
     display: flex;
-    gap: 50px;
-    margin-left: 200px;
-    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
   
-
-}
-.mother .text
-{
-    color: rgb(37, 38, 44);
-    font-size: 48px;
-    font-weight: 700;
+  .text {
+    font-size: 2em;
+    margin-bottom: 20px;
     text-align: center;
-}
-.mother1 .esrael
-{
-    height: 600px;
-    width: 450px;
-    border: 1px solid;
-}
-.mother1 .esrael .image1
-{
-height: 350px;
-width: 450px;
-
-}
-.mother1 .nahom 
-{
-    height: 600px;
-    width: 450px;
-    border: 0.1px solid;   
-}
-
-/* try to fix the css*/
-
-.mother1 .nahom .image2
-{
-    height: 350px;
-    width: 450px;
-}
-
-.mother1 .nati
-{
-    height: 600px;
-    width: 450px;
-    border: 1px solid;  
-}
-
-.mother1 .nati .image3
-{
-    height: 350px;
-    width:450px;
-}
-
-
-.esrael h4
-{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.esrael p
-{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-.esrael .btn1
-{
-height: 40px;
-width: 100px;
-border-radius: 10px;
-margin-top: 10px;
-margin-left: 5px;
-}
-.esrael .btn1:hover
-{
-    background-color: black;
+  }
+  
+  .mother1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .esrael, .nahom, .nati {
+    flex: 1 1 calc(33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgb(75, 71, 71);
+    max-width: 300px;
+    background-color: #fff;
+  }
+  
+  .image1, .image2, .image3 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  h4 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .btn1, .btn2, .btn3 {
+    background-color: #007BFF;
     color: white;
-}
-.nahom h4
-{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.nahom p
-{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.nahom .btn2
-{
-height: 40px;
-width: 100px;
-border-radius: 10px;
-margin-top: 10px;
-margin-left: 5px;
-
-}
-.nahom .btn2:hover
-{
-    background-color: black;
-    color: white;
-}
-.nati h4
-{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.nati p
-{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-.nati .btn3
-{
-height: 40px;
-width: 100px;
-border-radius: 10px;
-margin-top: 10px;
-margin-left: 5px;
-}
-.nati .btn3:hover
-{
-    background-color: black;
-    color: white;
-}
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn1:hover, .btn2:hover, .btn3:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .esrael, .nahom, .nati {
+      flex: 1 1 calc(45% - 40px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .esrael, .nahom, .nati {
+      flex: 1 1 calc(100% - 40px);
+    }
+  }
+  

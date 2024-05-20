@@ -1,0 +1,78 @@
+.list--header
+{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+
+.list--header h2
+{
+    color: #526d82;
+    text-align: center;
+}
+
+.list--header select
+{
+border-radius: 10px;
+border: none;
+padding: 8px 12px;
+border: 1px solid #dde6ed;
+color: #526d82;
+}
+
+
+.list--container .list .teacher--detail
+{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.list
+{
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.teacher--detail
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #526d82;
+
+}
+
+.teacher--detail img
+{
+    width: 50px;
+    background: #dbdfe3;
+    border-radius: 50%;
+}
+.list:hover
+{
+    background: #7d7979;
+    border-radius: 10px;
+}
+
+.spancourse
+{
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+.spanother
+{
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+.teacher--list .list--header h2
+{
+align-items: center;
+}

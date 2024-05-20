@@ -23,19 +23,20 @@ const TeacherList = ({ setCurrent, setSelectedTeacher }) => {
   };
 
   return (
-    <div className="teacher--listA">
-      <div className="list--headerA">
+    <div className="teacher--list">
+      <div className="list--header">
         <h2>List Of Teachers</h2>
     
       </div>
 
-      <div className="list--containerA">
+      <div className="list--container">
         {teachers &&
           teachers.map((teacher) => ( 
             <div className="list"
             key={teacher._id}
             onClick={()=>handleNewEvaluation(teacher)}>
-              <div className="teacher--detailA">
+              <div className="teacher--detail">
+                <img src={teacher.image} alt={teacher.name} />
                 <h2> {teacher.name} </h2>
               </div>
               <span className="spancourse"> {teacher.course} </span>

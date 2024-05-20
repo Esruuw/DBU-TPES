@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import "./studentform.css";
+import "./DeptForm.css";
 import API_URL from "../../config";
 
-const Studentform = ({ teacher }) => {
+const DeptForm = ({ teacher }) => {
   const [performance, setPerformance] = useState("");
   const [punctuality, setPunctuality] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -18,14 +18,14 @@ const Studentform = ({ teacher }) => {
   const [timeManagement, setTimeManagement] = useState("");
 
   useEffect(() => {
-    setStudentId(localStorage.getItem("studentId"));
+    setStudentId(localStorage.getItem("teacherId"));
   }, []);
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:3001/evaluation/createOne`,
+        `http://localhost:3001/deptevaluation/createOne`,
         {
           studentId: studentId && studentId,
           teacherId: teacher.teacherId,
@@ -60,7 +60,7 @@ const Studentform = ({ teacher }) => {
 
   return (
     <form onSubmit={handleSubmitForm}>
-      <div className="container11">
+      <div className="container5">
         <h2 align="center">
           {teacher && teacher.teacherId} |{teacher && teacher.name} |{" "}
           {teacher && teacher.department}
@@ -258,7 +258,7 @@ const Studentform = ({ teacher }) => {
         </div> */}
 
           {/* borderrrrrrrrrrrrrrr */}
-          <div className="formdivthird3">
+          {/* <div className="formdivthird3">
             <h2>Class Room</h2>
             {options.map((option) => (
               <div key={option.value} className="formdivthird3b">
@@ -280,8 +280,8 @@ const Studentform = ({ teacher }) => {
                 </h4>
               </div>
             ))}
-          </div>
-          <div className="formdivthird3">
+          </div> */}
+          {/* <div className="formdivthird3">
             <h2>Class Room Management</h2>
             {options.map((option) => (
               <div key={option.value} className="formdivthird3b">
@@ -303,8 +303,8 @@ const Studentform = ({ teacher }) => {
                 </h4>
               </div>
             ))}
-          </div>
-
+          </div> */}
+{/* 
           <div className="formdivthird3">
             <h2>Time Management</h2>
             {options.map((option) => (
@@ -327,7 +327,7 @@ const Studentform = ({ teacher }) => {
                 </h4>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="feedbackcomment">
@@ -371,4 +371,4 @@ const Studentform = ({ teacher }) => {
     </form>
   );
 };
-export default Studentform;
+export default DeptForm;

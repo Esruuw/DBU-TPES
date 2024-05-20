@@ -1,17 +1,13 @@
-// import React from 'react'
-import './registration.css'
-import user_icon from '../Assets/person.png'
-import email_icon from '../Assets/email.png'
-import password_icon from '../Assets/password.png'
-import {useNavigate} from 'react-router-dom'
-
-// import React, { Component } from 'react';
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "./registration.css";
+import user_icon from "../Assets/person.png";
+import email_icon from "../Assets/email.png";
+import password_icon from "../Assets/password.png";
 import API_URL from "../../config";
 
-export default function RegistrationForm()
-{
+export default function RegistrationForm() {
   const [dbuId, setDbuId] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -30,89 +26,82 @@ export default function RegistrationForm()
       if (response.status === 201) {
         navigate("/login");
       }
-    } catch (err) { 
-      if(err.response && err.response.status === 406){
-        setError("DBU id should be valid")
-       }  else   if(err.response && err.response.status === 404){
-        setError("email already taken.")
-       } else if (err.response && err.response.status === 400) {
-       setError("please fill approprete input")
-      }else if(err.response && err.response.status === 500){
+    } catch (err) {
+      if (err.response && err.response.status === 406) {
+        setError("DBU id should be valid");
+      } else if (err.response && err.response.status === 404) {
+        setError("email already taken.");
+      } else if (err.response && err.response.status === 400) {
+        setError("please fill appropriate input");
+      } else if (err.response && err.response.status === 500) {
         setError("internal server error");
-      }else{
+      } else {
         setError("something went wrong");
       }
-      // console.log(error);
     }
   };
 
-return (
-   <form onSubmit={ handleSubmit}>
-   <div className='container1'>
-    <div className='header'>
-       <div className='text'>Registration Form</div>
-       <div className='underline'></div>
-    </div>
-    {error && (
+  return (
+    <form onSubmit={handleSubmit}>
+      <div id="containerReg">
+        <div id="headerReg">
+          <div id="text">Registration Form</div>
+          <div id="underline"></div>
+        </div>
+        {error && (
           <div style={{ backgroundColor: "maroon", textAlign: "center" }}>
             {error}
           </div>
         )}
-    <div className='inputs'>
 
-      <div className='input'>
-           <img src={user_icon} alt="" />
-           <input 
-            type="text"
-            placeholder='Dbu Id...' 
-            required
-            name="dbuId"
-            onChange={(e) => setDbuId(e.target.value)}            />
-       </div>
-{/* borderrrrrrrrrr*/}
-
-       <div className='input'>
-           <img src={email_icon} alt="" />
-           <input type="email"
-            placeholder='Email...' 
-            required
-            name="email"
-            onChange={(e) => setEmail(e.target.value)}
+        <div id="inputsReg">
+          <div id="inputReg">
+            <img src={user_icon} alt="" />
+            <input
+              type="text"
+              placeholder="Dbu Id..."
+              required
+              name="dbuId"
+              onChange={(e) => setDbuId(e.target.value)}
             />
-       </div> 
+          </div>
 
-{/* borderrrrrrrrrr*/}
-       <div className='input'>
-           <img src={password_icon} alt="" />
-           <input type="password" 
-           placeholder='Password...'
-           required
-           name="password"
-           onChange={(e) => setPassword(e.target.value)}
-           />
-       </div>
-    </div>
-    <div className='forgot-password'>Have An Account? {" "}
-    <span>
-     <a href="Login">
-       Login
-  </a>
-     </span>
-     </div>
-    <div className='submit-container'>
-       <div className='submit'>
-         <button type="submit" className="reg-button">
-         Register
-         </button>
-         </div>
-       {/* <h2>Already Have An Account</h2>
-       <div className='submit' to = "SignUpStudent.jsx">
-           Login
-            </div> */}
+          <div id="inputReg">
+            <img src={email_icon} alt="" />
+            <input
+              type="email"
+              placeholder="Email..."
+              required
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
 
-    </div>
-   </div>
-   </form>
- );
- }
- 
+          <div id="inputReg">
+            <img src={password_icon} alt="" />
+            <input
+              type="password"
+              placeholder="Password..."
+              required
+              name="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+        </div>
+        <div id="forgot-password">
+          Have An Account?{" "}
+          <span>
+            <a href="Login">Login</a>
+          </span>
+        </div>
+        <div id="submit-container">
+          <div id="submit">
+            <button type="submit" className="reg-button">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  );
+}

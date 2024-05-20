@@ -18,14 +18,14 @@ const Teacherform = ({ teacher }) => {
   const [timeManagement, setTimeManagement] = useState("");
 
   useEffect(() => {
-    setStudentId(localStorage.getItem("studentId"));
+    setStudentId(localStorage.getItem("teacherId"));
   }, []);
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:3001/evaluation/createOne`,
+        `http://localhost:3001/teacherevaluation/createOne`,
         {
           studentId: studentId && studentId,
           teacherId: teacher.teacherId,
