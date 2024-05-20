@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "../styles/TeacherList.css";
+import "./CriteriaList.css";
 import axios from "axios";
 import API_URL from "../config";
 
 const CriteriaList = () => {
-  const [students, setStudents] = useState([]);
+  const [criterias, setCriteria] = useState([]);
+  // const [criteria_Id, setCriteria_Id] = useState([]);
 
   useEffect(() => {
     console.log("useffect");
@@ -13,7 +14,7 @@ const CriteriaList = () => {
         const response = await axios.get(`${API_URL}/criteria/findAll`);
         if (response.status === 200) {
           console.log("insidfe", response.data);
-          setStudents(response.data);
+          setCriteria(response.data);
         }
       } catch (error) {
         console.error("Error fetching teachers:", error);
@@ -22,19 +23,19 @@ const CriteriaList = () => {
     getAllStudents();
   }, []);
 
-//   const handleDeleteStudent = async (studentId) => {
-//     // console.log('teacher id: ', teacherId)
-//     try {
-//       const response = await axios.delete(
-//         `${API_URL}/sims/deleteById/${studentId}`
-//       );
-//       if (response.status === 200) {
-//         setStudents(students.filter((student) => student._id !== studentId));
-//       }
-//     } catch (error) {
-//       // console.error("Error deleting teacher:", error);
-//     }
-//   };
+  const handleDeleteStudent = async (criteria_Id) => {
+    // console.log('teacher id: ', teacherId)
+    try {
+      const response = await axios.delete(
+        `${API_URL}/criteria/deleteById/${criteria_Id}`
+      );
+      if (response.status === 200) {
+        setCriteria(criterias.filter((criteria) => criteria._id !== criteria_Id));
+      }
+    } catch (error) {
+      // console.error("Error deleting teacher:", error);
+    }
+  };
 
   return (
     <div className="teacher--list">
@@ -50,16 +51,22 @@ const CriteriaList = () => {
       <table className="teacher--table">
         <thead>
           <tr className="table--header">
+            <th>Criteria_Id</th>
             <th>Criteria</th>
             <th>Action</th>
+            <th>AddCriteria</th>
+
+
+            {/* <th>Action</th> */}
   
           </tr>
         </thead>
         <tbody>
           {/* Map through teachers */}
-          {students.map((student) => (
-            <tr key={student._id}>
-              <td>{student.name}</td>
+          {criterias.map((criteria) => (
+            <tr key={criteria._id}>
+                <td>{criteria.criteria_Id}</td>
+               <td>{criteria.standard_criteria}</td>
               {/* <td>{student.role}</td> */}
               {/* <td>{student.department}</td>
               <td>{student.semister}</td>
@@ -68,9 +75,9 @@ const CriteriaList = () => {
               <td>{teacher.year}</td>
               <td>{teacher.semester}</td> */}
               <td>
-                {/* <button onClick={() => handleDeleteStudent(student._id)}>
+                <button onClick={() => handleDeleteStudent(criteria._id)}>
                   Delete
-                </button> */}
+                </button>
               </td>
             </tr>
           ))}

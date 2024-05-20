@@ -1,119 +1,109 @@
-.container {
+/* AddTeachers.css */
+
+.containerADDT {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header .text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header .underline {
+    width: 50px;
+    height: 4px;
+    background-color: #007BFF;
+    margin: 10px auto 0;
+  }
+  
+  .inputs {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-top: 50px;
-    min-height: 1000px; /* Changed to min-height */
-    width: 700px;
-    background: #05445E;
-    padding-bottom: 30px;
-    border-radius: 10px;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 9px;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.text {
-    color: white;
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.underline {
-    width: 61px;
-    height: 6px;
-    background: rgb(4, 12, 74);
-    border-radius: 9px;
-}
-
-.inputs {
-    margin-top: 55px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.input {
+    gap: 10px; /* Reduced gap between inputs */
+  }
+  
+  .input {
     display: flex;
     align-items: center;
-    margin: auto;
-    width: 90%; /* Changed to percentage */
-    max-width: 480px; /* Added max-width */
-    height: 80px;
-    background: #eaeaea;
-    border-radius: 6px;
-}
-
-.input img {
-    margin: 0px 30px;
-}
-
-.input input {
-    height: 50px;
-    width: calc(100% - 90px); /* Adjusted width */
-    background: transparent;
+    background-color: #fff;
+    padding: 5px; /* Reduced padding */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 40px; /* Reduced height */
+  }
+  
+  .input img {
+    width: 20px; /* Reduced icon size */
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .input input {
+    flex: 1;
+    padding: 5px; /* Reduced padding */
     border: none;
     outline: none;
-    color: #797979;
-    font-size: 19px;
-}
-
-.forgot-password {
-    padding-left: 62px;
-    margin-top: 27px;
-    color: white;
-    font-size: 18px;
-    margin-left: 270px;
-}
-
-.forgot-password span {
-    color: rgb(4, 12, 74);
-    cursor: pointer;
-}
-
-.submit-container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin: 60px auto;
-}
-
-.submit {
+    font-size: 14px; /* Reduced font size */
+    color: #333;
+  }
+  
+  .input input::placeholder {
+    color: #aaa;
+  }
+  
+  .submit-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 59px;
+    margin-top: 20px;
+  }
+  
+  .submit .reg-button {
+    padding: 10px 20px;
+    font-size: 16px;
     color: #fff;
-    background: black;
-    border-radius: 50px;
-    font-size: 19px;
-    font-weight: 700;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.gray {
-    background: #eaeaea;
-    color: #676767;
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%; /* Adjusted width */
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit .reg-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .containerADDT {
+      width: 100%;
+      padding: 15px;
     }
-
+  
+    .header .text {
+      font-size: 20px;
+    }
+  
     .input {
-        width: 100%; /* Set width to 100% on smaller screens */
-        max-width: none; /* Removed max-width */
+      height: 35px; /* Further reduced height for smaller screens */
     }
-
+  
     .input input {
-        width: calc(100% - 90px); /* Adjusted width */
+      font-size: 12px; /* Reduced font size for smaller screens */
     }
-}
+  
+    .submit .reg-button {
+      font-size: 14px;
+    }
+  }
+  

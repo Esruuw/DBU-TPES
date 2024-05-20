@@ -45,7 +45,7 @@ const AddTeachers = () => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <div className="container">
+      <div className="containerADDT">
         <div className="header">
           <div className="text">Register Teachers</div>
           <div className="underline"></div>

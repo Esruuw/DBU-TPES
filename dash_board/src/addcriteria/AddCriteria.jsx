@@ -11,6 +11,8 @@ import API_URL from "../config";
 
 const AddCriteria = () => {
   const [standard_criteria, setStandard_criteria] = useState("");
+  const [criteria_Id, setCriteria_Id] = useState("");
+
 //   const [course, setCourse] = useState("");
 //   const [department, setDepartment] = useState("");
 //   const [teacherId, setTeacherId] = useState("");
@@ -24,6 +26,7 @@ const AddCriteria = () => {
     try {
       const response = await axios.post(`${API_URL}/criteria/createOne`, {
         standard_criteria,
+        criteria_Id,
       });
       if (response.status === 201) {
         setError("criteria added successfully.");
@@ -49,6 +52,17 @@ const AddCriteria = () => {
           {error && (
             <div style={{ padding: 5, backgroundColor: "#e78c8c", margin: 20, textAlign: 'center', fontSize: 24 }}>{error}</div>
           )}
+
+            <div className="input">
+            <img src={user_icon} alt="" />
+            <input
+              type="text"
+              value={criteria_Id}
+              onChange={(e) => setCriteria_Id(e.target.value)}
+              placeholder="criteria ID..."
+            />
+          </div>
+
           <div className="input">
             <img src={user_icon} alt="" />
             <input
@@ -58,6 +72,9 @@ const AddCriteria = () => {
               placeholder="criteria..."
             />
           </div>
+
+
+
 
 
         

@@ -18,6 +18,7 @@ import { ThirdDetail } from './resultdetail2/ThirdDetail.jsx';
 import AddStudents from './addstudents/AddStudent.jsx';
 import StudentsList from './studentslist/StudentsList.jsx';
 import AddCriteria from './addcriteria/AddCriteria.jsx';
+import CriteriaList from './criterialist/CriteriaList.jsx';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/add-stud" element={<AddStudents />} />
           <Route path="/stud-list" element={< StudentsList/>} />
           <Route path="/criteria-page" element={< AddCriteria/>} />
+          <Route path="/criteria-list" element={< CriteriaList/>} />
 
        </Routes>
       </div>

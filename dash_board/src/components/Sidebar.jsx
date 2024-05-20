@@ -132,18 +132,18 @@ render()
 
             <a href="/add-stud" className='item'>
             <BiStats  className='icon'/>
-            Add Student
+            Add Participants
             </a>
 
             <a href="/stud-list" className='item'>
             <BiMessage  className='icon'/>
-            List of Students
+            List of Participants
             </a>
             <a href="/criteria-page" className='item'>
             <BiMessage  className='icon'/>
             Add Criteria           
             </a>
-            <a href="/stud-list" className='item'>
+            <a href="/criteria-list" className='item'>
             <BiMessage  className='icon'/>
              See Added Criteria
             </a>

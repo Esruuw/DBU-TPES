@@ -1,0 +1,76 @@
+/* TeacherList.css */
+
+.teacher--list {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .list--header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .list--header select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .teacher--table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .teacher--table th,
+  .teacher--table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table--header {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .teacher--table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .teacher--table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .teacher--table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .teacher--table td button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .teacher--table td button:hover {
+    background-color: #ff1a1a;
+  }
+  

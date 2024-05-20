@@ -63,7 +63,7 @@ const AddStudents = () => {
               type="text"
               value={dbuId}
               onChange={(e) => setDbuId(e.target.value)}
-              placeholder="Student id..."
+              placeholder="Participant id..."
             />
           </div>
 
@@ -73,7 +73,7 @@ const AddStudents = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Students Name..."
+              placeholder="Participant Name..."
             />
           </div>
           {/* borderrrrrrrrrr*/}
