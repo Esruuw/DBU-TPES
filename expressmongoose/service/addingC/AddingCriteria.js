@@ -7,9 +7,9 @@ require("../../models/AddCriteria");
 const criteriaModel = mongoose.model("AddCriteriaInfo");
 
 const createOne = async (req, res) => {
-  const { standard_criteria} = req.body;
+  const { standard_criteria, criteria_Id} = req.body;
 
-  if (!standard_criteria) {
+  if (!standard_criteria || !criteria_Id) {
     return res.status(400).send("please the whole input field!");
   }
 
@@ -26,6 +26,7 @@ const createOne = async (req, res) => {
     const newCriteria = await criteriaModel.create({
       // password,
       standard_criteria,
+      criteria_Id,
     });
     return res.status(201).send(newCriteria);
   } catch (err) {

@@ -7,6 +7,7 @@ router.post('/createOne', createOne);
 router.get('/findAll', findAll);
 router.get('/findById/:id', findById);
 router.get('/findManyByTeacherId/:id', findManyByTeacherId);
+
 // router.get('/findByDbuId/:dbuId', findByDbuId);
 // router.delete('/deleteById/:id', deleteById);
 // router.put('/updateById/:id', updateById);

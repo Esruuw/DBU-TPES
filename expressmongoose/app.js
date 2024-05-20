@@ -28,6 +28,13 @@ app.use('/criteria/', criteria);
 
 const Student = require('./controller/addingS')
 app.use('/student/', Student);
+
+const TeacherEvaluation = require('./controller/teacherevaluation')
+app.use('/teacherevaluation/', TeacherEvaluation);
+
+
+const DeptEvaluation = require('./controller/deptevaluation')
+app.use('/deptevaluation/', DeptEvaluation);
  
 app.use((req, res, next) => {
     res.status(404).send({ message: "Route not found", hint: "Please check your URL" });
