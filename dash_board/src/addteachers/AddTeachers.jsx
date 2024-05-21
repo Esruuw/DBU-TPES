@@ -52,7 +52,7 @@ const AddTeachers = () => {
         </div>
         <div className="inputs">
           {error && (
-            <div style={{ padding: 5, backgroundColor: "red" }}>{error}</div>
+            <div style={{ padding: 5, backgroundColor: "#e78c8c", margin: 20, textAlign: 'center', fontSize: 24 }}>{error}</div>
           )}
           <div className="input">
             <img src={user_icon} alt="" />
