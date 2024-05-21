@@ -3,12 +3,14 @@
     flex-direction: column; /* Arrange the boxes in a column */
     align-items: center; /* Center the boxes horizontally */
     padding: 20px;
-    border: 2px solid #000; /* Adding border to the main div */
+    border: 0px solid #000; /* Adding border to the main div */
     border-radius: 10px;
     width: 500px; /* Minimize the width of the main div */
     height: 500px; /* Increase the height of the main div */
     margin: 0 auto; /* Center the main div horizontally on the page */
     margin-top: 80px;
+    box-shadow: 0px 8px 20px black;
+
   }
   
   .box {

@@ -1,127 +1,96 @@
-.container11 {
-  max-width: 1200px;
+/* TeachersList.css */
+
+.teacher--listB {
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: white;
-  box-shadow: 0px 8px 20px black;
+  font-family: Arial, sans-serif;
+}
+.bothh
+
+{
+display: flex;
+gap: 80%;
 }
 
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  .formdiv {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 10%;
-    margin-top: 3%;
-  }
-  
-  .formdiv1,
-  .formdiv2,
-  .formdiv3 {
-    flex: 1;
-  }
-  
-  .formdiv1b,
-  .formdiv2b,
-  .formdiv3b {
-    border: 2px solid #ccc; /* Border style */
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .formdivsecond {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 10%;
+.bothh 
+{
 
-  }
+}
+.list--headerB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #05445E;
+  border-radius: 8px;
+  width: 10%;
   
-  .formdivsecond1,
-  .formdivsecond2 {
-    flex: 1;
-  }
-  
-  .formdivsecond1b,
-  .formdivsecond2b {
-    border: 2px solid #ccc; /* Border style */
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .formdivthird {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 10%;
 
-  }
-  
-  .formdivthird3 {
-    flex: 1;
-  }
-  
-  .formdivthird3b {
-    border: 2px solid #ccc; /* Border style */
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .feedbackcomment {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 10%;
+}
 
+.list--headerB h2 {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+
+}
+
+.list--headerB a {
+  text-decoration: none;
+  color: #05445E;
+  transition: color 0.3s ease;
+}
+
+.list--headerB a:hover {
+  color: #05445E;
+}
+
+.list--containerB {
+  width: 50%;
+  margin: 0 auto;  /* Centers the container horizontally */
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #05445E;
+  color: White;
+  border-radius: 3px;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background-color: #312f2f;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .list--headerB h2 {
+    font-size: 20px;
   }
-  
-  .feedback,
-  .comment {
-    flex: 1;
+
+  th, td {
+    padding: 10px 12px;
   }
-  
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-  }
-  
-  .buttons {
-    text-align: center;
-  }
-  
-  .buttonsubmit button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .buttonsubmit button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 768px) {
-    .formdiv,
-    .formdivsecond,
-    .formdivthird,
-    .feedbackcomment {
-      flex-direction: column;
-    }
-  }
-  
-  /* Add more media queries as needed */
-  
+}

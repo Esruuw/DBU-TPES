@@ -127,17 +127,23 @@ suit the diverse learning needs of their students.
     <div className='third1'>  
 <p className='box1'>
 Students
-</p>
+In our Teacher Performance Evaluation System,
+ students have the opportunity to log in and provide valuable feedback on their teachers.</p>
 <p className="box2">
 
 Teachers
+Teachers log into the system to view evaluation 
+results and feedback, and to evaluate their peers. 
 </p>
 
 <p className="box3">
 Dept Head
+The department head serves as the system admin,
+ overseeing evaluations and ensuring smooth operation. 
 </p>
 <p className="box4">
 Dean
+Dean logs in to evaluate both department heads and teachers.
 </p>
     </div>
    </div>

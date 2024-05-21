@@ -12,7 +12,7 @@ function DeptResult({ teacher }) {
   useEffect(() => {
     const getAllEvaluations = async () => {
       try {
-        const response = await axios.get(`${API_URL}/teacherevaluation/findManyByTeacherId/${teacher && teacher.teacherId}`);
+        const response = await axios.get(`${API_URL}/deptevaluation/findManyByTeacherId/${teacher && teacher.teacherId}`);
         if (response.status === 200) {
           setEvaluations(response.data);
         }

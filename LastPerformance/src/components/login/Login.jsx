@@ -90,7 +90,7 @@ export default function Login() {
               />
             </div>
           </div>
-          <div id='forgot-password'>Lost Password? <span>Click Here!</span></div>
+          <div id='forgot-password'>Not have an Account? <a href="/RegistrationForm">Register</a></div>
           <div id='submit-container'>
             <div id='submit'>
               <button type="submit" className="reg-button">
@@ -98,8 +98,12 @@ export default function Login() {
               </button>
             </div>
           </div>
-        </div>
+        </div>g
       </form>
     </div>
   )
 }
+
+
+
+

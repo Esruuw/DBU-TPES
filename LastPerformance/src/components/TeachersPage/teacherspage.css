@@ -21,7 +21,7 @@
   width: 10%; /* Set fixed width for header */
   text-decoration: dotted;
   cursor: pointer;
-  color: #1b2328;
+  color: #05445E;
   font-size: 20px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .list--container th {
-  background-color: rgb(0, 28,73);
+  background-color: #05445E;
   color: white;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .feedback--box {
-  border: 1px solid #0e3bd0;
+  border: 1px solid #05445E;
   padding: 20px;
   width: 45%;
   box-sizing: border-box;

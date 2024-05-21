@@ -16,7 +16,7 @@ export default function Forms() {
           {/* <h2>WELL COME TO TEACHER EVALUATION FORM</h2> */}
         </div>
         <h3> 
-          <h4>select One of Teacher to Fill Evaluation Form!</h4>
+          <h4>select one of teacher to fill evaluation form!</h4>
         
         {current && current === "evaluationForm" &&(
 

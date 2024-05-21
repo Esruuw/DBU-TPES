@@ -15,10 +15,10 @@ export default function TeacherP() {
     <div>
       <div className="firstText1">
         <h1>DEBRE BERHAN UNIVERSITY</h1>
-        <h2>Teachers Performance Evaluation Form</h2>
+        <h2>Teachers Performance Evaluation System</h2>
       </div>
       <h3>
-        <h4>Select one of the teachers to see the evaluation result!</h4>
+        {/* <h4>Select one of the teachers to see the evaluation result!</h4> */}
 
         {current === "evaluationForm" && !evaluationView && (
           <button className="buttonn" onClick={() => setCurrent("teacherList")}>

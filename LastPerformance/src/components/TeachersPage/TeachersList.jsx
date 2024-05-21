@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./TeachersList.css";
+import { useNavigate } from "react-router-dom"; // Updated import
 import axios from "axios";
 import API_URL from "../../config";
+import "./TeachersList.css";
 
 const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
   const [teachers, setTeachers] = useState();
+  const navigate = useNavigate(); // Updated to useNavigate
 
   useEffect(() => {
     const getAllTeachers = async () => {
@@ -22,13 +24,26 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
     setCurrent("evaluationForm");
   };
 
+  const handleLogout = () => {
+    // Clear authentication tokens or session data
+    localStorage.removeItem("token"); // or any other storage used
+
+    // Redirect to login page
+    navigate("/login"); // Updated to use navigate
+  };
+
   return (
     <div className="teacher--listB">
-      <div className="list--headerB">
-        {/* <h2>List Of Teachers</h2> */}
-        <a href="">  
-             <h2>Evaluate Peer</h2>
-        </a>
+      <div className="bothh">
+        <div className="list--headerB">
+          <a href="/teachers_form_peer">
+            <h2>Evaluate Peer</h2>
+          </a>
+        </div>
+        <div className="bothh2">
+        <button onClick={handleLogout}>Logout</button> {/* Add logout button */}
+
+        </div>
       </div>
 
       <div className="list--containerB">
@@ -45,7 +60,8 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
               teachers.map((teacher) => (
                 <tr
                   key={teacher._id}
-                  onClick={() => handleTeacherClick(teacher)}>
+                  onClick={() => handleTeacherClick(teacher)}
+                >
                   <td>{teacher.name}</td>
                   <td>{teacher.course}</td>
                   <td>{teacher.department}</td>

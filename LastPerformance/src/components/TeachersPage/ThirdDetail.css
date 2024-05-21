@@ -18,15 +18,18 @@
     margin-top: 30px;
     gap: 30px;
   }
-
+  
   .column {
     margin: 10px;
     padding: 10px;
-    border: 2px solid #0f1918 ;
+    border: 2px solid #05445E ;
     box-sizing: border-box; /* Ensure padding and border are included in the width */
     width: 650px;
+    box-shadow: 0px 18px 40px rgb(123, 120, 120);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
   }
-  
+
   .column h2 {
     margin-top: 0; /* Remove top margin */
     margin-bottom: 10px;
