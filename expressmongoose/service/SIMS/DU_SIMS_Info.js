@@ -8,6 +8,7 @@ require("../../models/Stud_Form");
 const SIMS_DB_Info = simsDbConnection.model("SIMSInfo", SIMSInfoSchema);
 
 const performanceForm = mongoose.model("PerformanceForm");
+const user = mongoose.model("UserInfo");
 
 const updateById = async (req, res) => {
   const { id } = req.params;
@@ -51,6 +52,12 @@ const deleteById = async (req, res) => {
   const deletedRecord = await SIMS_DB_Info.deleteOne({ _id: id });
   if (!deletedRecord) {
     return res.status(404).send({ message: "Record not found" });
+  }
+
+  
+  const deletedUser = await user.deleteOne({ dbuId: foundRecord.dbuId });
+  if (!deletedUser) {
+    return res.status(404).send({ message: "User not found" });
   }
 
   await performanceForm.deleteMany({ studentId: foundRecord.dbuId });
