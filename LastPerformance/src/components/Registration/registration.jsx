@@ -24,6 +24,7 @@ export default function RegistrationForm() {
       });
 
       if (response.status === 201) {
+        alert("Succesfully Registered ")
         navigate("/login");
       }
     } catch (err) {
@@ -49,10 +50,8 @@ export default function RegistrationForm() {
           <div id="underline"></div>
         </div>
         {error && (
-          <div style={{ backgroundColor: "maroon", textAlign: "center" }}>
-            {error}
-          </div>
-        )}
+            <div style={{ padding: 5, backgroundColor: "#e78c8c", margin: 20, textAlign: 'center', fontSize: 24 }}>{error}</div>
+          )}
 
         <div id="inputsReg">
           <div id="inputReg">

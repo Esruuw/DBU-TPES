@@ -1,0 +1,49 @@
+/* Container for the whole page */
+.page-container {
+    padding: 20px;
+  }
+  
+  /* Styling for the heading */
+  .firstText1 h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the button */
+  .button-back {
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-back:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the TeachersList component */
+  .teachers-list {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the evaluation forms */
+  .evaluation-forms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Styling for the evaluation form cards */
+  .evaluation-form-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  

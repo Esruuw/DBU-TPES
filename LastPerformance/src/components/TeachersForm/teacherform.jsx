@@ -44,12 +44,16 @@ const Teacherform = ({ teacher }) => {
       );
       if (response.status === 201) {
         console.log(response.data);
-        console.log("evaluation summition succeed...");
+        alert("Evaluation submission succeed...");
+        window.location.reload(); // Refresh the page and clear the form
+
+        console.log("Evaluation submission succeed...");
       }
     } catch (e) {
       console.log(e);
     }
   };
+  
   const options = [
     { label: "Very Low", value: "veryLow" },
     { label: "Low", value: "low" },

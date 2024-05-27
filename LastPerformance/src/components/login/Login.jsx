@@ -36,6 +36,8 @@ export default function Login() {
         } else if (userFound.user.role === "admin") {
           // navigate('/mm');
           alert("only students can access this page");
+          window.location.reload(); // Refresh the page and clear the form
+
         }
       }
     } catch (err) {
@@ -98,7 +100,7 @@ export default function Login() {
               </button>
             </div>
           </div>
-        </div>g
+        </div>
       </form>
     </div>
   )

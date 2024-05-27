@@ -35,11 +35,11 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
   return (
     <div className="teacher--listB">
       <div className="bothh">
-        <div className="list--headerB">
+        {/* <div className="list--headerB">
           <a href="/teachers_form_peer">
-            <button>Evaluate Peer</button>
+            <h2>Evaluate Peer</h2>
           </a>
-        </div>
+        </div> */}
         <div className="bothh2">
         <button onClick={handleLogout}>Logout</button> {/* Add logout button */}
 
@@ -75,5 +75,3 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
 };
 
 export default TeachersList;
-
-

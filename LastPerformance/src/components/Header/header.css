@@ -1,147 +1,168 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbarr {
-    background: #000;
+#navbarr {
+    background: #05445E;
     height: 40px;
     width: 100%;
     box-shadow: 0px 8px 20px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it is above other elements */
 }
 
-.navbarr h1 { 
+#navbarr h1 { 
     color: white;
     text-align: center;
     line-height: 40px;
 }
 
-.secnavbar {
+#secnavbar {
     background: #fff;
     height: 70px;
     width: 100%;
+    backdrop-filter: blur(30px);
     box-shadow: 0px 8px 20px rgb(75, 71, 71);
+    border: 2px solid rgba(255, 255, 255, 0.18);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 40px; /* Positioned right below the navbarr */
+    left: 0;
+    z-index: 999; /* Ensure it is above other elements but below navbarr */
 }
 
-.secnavbar nav {
+#secnavbar nav {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.secnavbar nav .list_nav .nav_link {
+#secnavbar img#logo {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+#secnavbar nav #list_nav {
+    list-style: none;
+    margin: 0 15px;
+}
+
+#secnavbar nav #list_nav #nav_link {
     font-size: 20px;
     color: #000;
     text-decoration: none;
 }
 
-.secnavbar nav .list_nav:hover {
+#secnavbar nav #list_nav:hover {
     transform: scale(1.1); 
     transition: transform 0.3s ease; 
 }
 
-.secnavbar nav .list_nav:hover .nav_link {
-    color: rgb(0, 28,73); 
+#secnavbar nav #list_nav:hover #nav_link {
+    color: rgb(0, 28, 73); 
     font-weight: 400;
 }
 
-.firstPage {
+#firstPage {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 9%;
 }
 
-.firstPage1 {
+#firstPage1 {
     flex: 1;
-    max-width: 500px;
+    max-width: 600px;
     margin-top: 5%;
+    margin-left: 0; /* No left margin */
 }
 
-.firstPage1 h1 {
+#firstPage1 h1 {
     font-size: 2.5em;
-    color: rgb(0,28,73);
+    color: rgb(0, 28, 73);
     margin: 10px 0;
-
 }
 
-.firstPage1 p {
+#firstPage1 p {
     font-size: 1.25em;
     margin: 10px 0;
 }
 
-.buttons button {
+#buttons button {
     padding: 10px 20px;
     border: 1px solid white;
     border-radius: 10px;
-    background-color: rgb(0, 28,73);
+    background-color: rgb(0, 28, 73);
     color: white;
     cursor: pointer;
     font-weight: 500;
     margin: 5px;
 }
-.buttons .buttons{
-    margin-left: 5%;
 
+#buttons #buttons {
+    margin-left: 5%;
 }
-.firstimage {
+
+#firstimage {
     flex: 1;
     max-width: 500px;
     margin: 20px;
 }
 
-.secondpage {
+#secondpage {
     display: flex;
     flex-wrap: wrap;
     gap: 300px;
     padding: 20px;
     justify-content: center;
     margin-top: 3%;
-
 }
 
-.secondleft {
+#secondleft {
     flex: 1;
     max-width: 500px;
-
 }
 
-.secondright {
+#secondright {
     flex: 1;
     max-width: 800px;
-    color: rgb(0,28,73);
+    color: rgb(0, 28, 73);
 }
 
-.secondright .par1, .secondright .par2, .secondright .par3, .secondright .par4, .secondright .par5, .secondright .par6 {
+#secondright #par1, #secondright #par2, #secondright #par3, #secondright #par4, #secondright #par5, #secondright #par6 {
     font-size: 1.25em;
     margin-top: 20px;
 }
 
-.thirdpage h1 {
+#thirdpage h1 {
     text-align: center;
     font-size: 2.5em;
-    color: rgb(0,28,73);
+    color: rgb(0, 28, 73);
     margin-top: 20px;
 }
 
-.third1 {
-    display: flex;
+#third1 {
+   display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px;
 }
 
-.third1 .box1, .third1 .box2, .third1 .box3, .third1 .box4 {
+#third1 #box1, #third1 #box2, #third1 #box3, #third1 #box4 {
     flex: 1;
     max-width: 330px;
     height: 300px;
@@ -150,24 +171,34 @@ body {
     box-shadow: 0px 8px 20px rgb(75, 71, 71);
     text-align: center;
     font-size: 1.25em;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
 }
 
-.third1 .box1:hover, .third1 .box2:hover, .third1 .box3:hover, .third1 .box4:hover {
+#third1 h2 {
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px; /* Adjust as needed for spacing */
+}
+
+#third1 p {
+    margin: 0; /* Remove default margin */
+    padding: 0 20px; /* Adjust as needed for spacing */
+}
+
+#third1 #box1:hover, #third1 #box2:hover, #third1 #box3:hover, #third1 #box4:hover {
     transform: translateY(-10px);
 }
 
-.fourthpage h1 {
+#fourthpage h1 {
     text-align: center;
     font-size: 2.5em;
-    color: rgb(0,28,73);
+    color: rgb(0, 28, 73);
     margin-top: 20px;
 }
 
-.fourth1 {
+#fourth1 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -175,68 +206,68 @@ body {
     padding: 20px;
 }
 
-.fourth1 .fourthfirst, .fourth1 .fourthsecond, .fourth1 .fourththird {
+#fourth1 #fourthfirst, #fourth1 #fourthsecond, #fourth1 #fourththird {
     flex: 1;
     max-width: 300px;
 }
 
-.fourth1 .esru, .fourth1 .nahi, .fourth1 .nati,
-.fourth1 .kenu, .fourth1 .hale, .fourth1 .amen,
-.fourth1 .rich, .fourth1 .eba, .fourth1 .roba {
+#fourth1 #esru, #fourth1 #nahi, #fourth1 #nati,
+#fourth1 #kenu, #fourth1 #hale, #fourth1 #amen,
+#fourth1 #rich, #fourth1 #eba, #fourth1 #roba {
     font-size: 1.25em;
     margin-top: 10px;
 }
 
-.fifthpage {
+#fifthpage {
     height: 50px;
     width: 100%;
-    background: rgb(0,28,73);
+    background: rgb(0, 28, 73);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fifthpage h4 {
+#fifthpage h4 {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    .secnavbar nav {
+    #secnavbar nav {
         flex-direction: column;
         gap: 10px;
     }
-    .firstPage {
+    #firstPage {
         flex-direction: column;
     }
-    .firstPage1, .firstimage, .secondleft, .secondright {
+    #firstPage1, #firstimage, #secondleft, #secondright {
         max-width: 100%;
     }
-    .third1 {
+    #third1 {
         flex-direction: column;
     }
-    .fourth1 {
+    #fourth1 {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .secnavbar nav {
+    #secnavbar nav {
         flex-direction: column;
         gap: 5px;
     }
-    .firstPage1 h1 {
+    #firstPage1 h1 {
         font-size: 2em;
     }
-    .firstPage1 p, .secondright .par1, .secondright .par2, .secondright .par3, .secondright .par4 {
+    #firstPage1 p, #secondright #par1, #secondright #par2, #secondright #par3, #secondright #par4 {
         font-size: 1em;
     }
-    .thirdpage h1, .fourthpage h1 {
+    #thirdpage h1, #fourthpage h1 {
         font-size: 2em;
     }
-    .third1 .box1, .third1 .box2, .third1 .box3, .third1 .box4,
-    .fourth1 .fourthfirst, .fourth1 .fourthsecond, .fourth1 .fourththird {
+    #third1 #box1, #third1 #box2, #third1 #box3, #third1 #box4,
+    #fourth1 #fourthfirst, #fourth1 #fourthsecond, #fourth1 #fourththird {
         max-width: 100%;
     }
 }

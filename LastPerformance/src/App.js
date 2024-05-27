@@ -17,6 +17,7 @@ import DeptPage from './page5/DeptPage.jsx';
 import DeptResult from './components/DeptResult/DeptResult.jsx';
 import DeptResultPage from './page6/DeptResultPage.jsx';
 import PeerResultPage from './page7/PeerResultPage.jsx';
+import HrmResult from './page8/HrmResult.jsx';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
   <Route path="/Dept_result" element={<DeptResult />} />
   <Route path="/Dept_result_Page" element={<DeptResultPage />} />
   <Route path="/teachers_peer_result" element={<PeerResultPage />} />
+  <Route path="/hrm_result" element={<HrmResult />} />
 
 </Routes>
 </BrowserRouter>

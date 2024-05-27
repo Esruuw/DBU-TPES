@@ -44,6 +44,9 @@ const Studentform = ({ teacher }) => {
       );
       if (response.status === 201) {
         console.log(response.data);
+        alert("teachers evaluation summition succeed...")
+        window.location.reload(); // Refresh the page and clear the form
+
         console.log("teachers evaluation summition succeed...");
       }
     } catch (e) {

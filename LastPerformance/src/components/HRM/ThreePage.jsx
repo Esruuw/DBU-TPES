@@ -13,7 +13,8 @@ function ThreePage({ setEvaluationView }) {
       <div className="box" onClick={() => setEvaluationView("departmentResult")}>
         <h2>Department Result</h2>
       </div>
-      <div className="box" onClick={() => setEvaluationView("totalResult")}>
+
+      <div className="box" onClick={() => setEvaluationView("evaluationForm")}>
         <h2>Total Result</h2>
       </div>
     </div>
