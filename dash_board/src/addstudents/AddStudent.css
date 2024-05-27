@@ -1,76 +1,153 @@
 /* AddStudent.css */
 
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f0f3f4;
+#containerAddT {
+  width: 100%; /* Adjusted to take full width of parent container */
+  max-width: 800px; /* Increased max-width to make the container wider */
+  margin: 20px 0px 0px 200px; /* Center the container horizontally and add top and bottom margin */
+  padding: 40px; /* Increased padding for a larger container */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px black;
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+  height: auto; /* Allow height to adjust based on content */
+  min-height: 600px; /* Set a minimum height for the container */
+}
 
+#header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#header #text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#header #underline {
+  width: 50px;
+  height: 4px;
+  background-color: #007BFF;
+  margin: 10px auto 0;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap between inputs */
+}
+
+#error {
+  padding: 5px;
+  background-color: #e78c8c;
+  margin: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#input {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px; /* Adjusted padding for larger input fields */
+  border-radius: 5px;
+  height: 45px; /* Increased height for larger input fields */
+  border: 2px solid #ccc; /* Default border color and size */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+#input img {
+  width: 20px; /* Reduced icon size */
+  height: 20px;
+  margin-right: 10px;
+}
+
+#input input {
+  flex: 1;
+  padding: 5px; /* Adjusted padding */
+  border: none;
+  outline: none;
+  font-size: 16px; /* Increased font size for larger input fields */
+  color: #333;
+  font-weight: bold; /* Make input text bold */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+  width: calc(100% - 40px); /* Adjust the width to account for padding and icon */
+}
+
+#input input::placeholder {
+  color: #aaa;
+  font-weight: bold; /* Bold placeholder text */
+}
+
+/* For Mozilla Firefox */
+#input input::-moz-placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+/* For Internet Explorer */
+#input input:-ms-input-placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+/* For Microsoft Edge */
+#input input::-ms-input-placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+/* Change border color and size on focus */
+#input input:focus {
+  border: none;
+  outline: none;
+}
+
+#input:focus-within {
+  border-color: #007BFF; /* Focused border color */
+  border-width: 2px; /* Focused border size */
+}
+
+#submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#submit #reg-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit #reg-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  #containerAddT {
+      width: 100%;
+      padding: 15px;
   }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
+
+  #header #text {
+      font-size: 20px;
   }
-  
-  .text {
-    font-size: 24px;
+
+  #input {
+      height: 35px; /* Further reduced height for smaller screens */
   }
-  
-  .underline {
-    width: 50px;
-    height: 2px;
-    background-color: #333;
-    margin: 0 auto;
+
+  #input input {
+      font-size: 12px; /* Reduced font size for smaller screens */
   }
-  
-  .inputs {
-    margin-bottom: 20px;
+
+  #submit #reg-button {
+      font-size: 14px;
   }
-  
-  .input {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .input img {
-    width: 20px;
-    margin-right: 10px;
-  }
-  
-  .input input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .submit-container {
-    text-align: center;
-  }
-  
-  .reg-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .reg-button:hover {
-    background-color: #555;
-  }
-  
-  .error-message {
-    padding: 5px;
-    background-color: #e78c8c;
-    margin: 20px;
-    text-align: center;
-    font-size: 18px;
-  }
-  
+}

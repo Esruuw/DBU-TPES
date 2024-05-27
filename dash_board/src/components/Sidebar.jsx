@@ -1,158 +1,67 @@
-// import React from 'react'
-// import {
-//     BiHome, 
-//     BiBookAlt, 
-//     BiMessage,
-//     BiSolidReport,
-//     BiStats,
-//     BiTask,
-//     BiHelpCircle,
-    
-//      } from 'react-icons/bi';
-// import '../styles/Sidebar.css';
-
-// const Sidebar = () => {
-//   return (
-//     <div className='menu'>
-//       <div className="logo">
-//         <BiBookAlt className='logo-icon'/>
-//         <h2>My_Dashboard</h2>
-//         </div>  
-
-
-//         <div className="menu--list">
-//             <a href="Resultt" className='item activate'>
-//             <BiTask className='icon'/>
-//              Result
-//             </a>
-
-//             <a href="AddTeachers" className='item'>
-//             <BiSolidReport  className='icon'/>
-//            Add Teachers
-//             </a>
-
-//             <a href="#" className='item'>
-//             <BiStats  className='icon'/>
-//             Message
-//             </a>
-
-//             <a href="#" className='item'>
-//             <BiMessage  className='icon'/>
-//             Help
-//             </a>
-
-//             <a href="#" className='item'>
-//             <BiHelpCircle  className='icon'/>
-//             Logout
-//             </a>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default Sidebar
+// Sidebar.js
 import React, { Component } from 'react';
-import Contentheader from './Contentheader';
-import Card from './Card';
-import Profile from './Profile';
+import { BiBookAlt, BiTask, BiSolidReport, BiStats, BiMessage, BiHelpCircle } from 'react-icons/bi';
 import '../styles/Sidebar.css';
-import { Link } from 'react-router-dom';
-import TeacherList from './TeacherList';
-import '../styles/Content.css';
-import Content from'./Content';
-import {BiHelpCircle, } from 'react-icons/bi';
-import Forms from '../pages/Forms.jsx';
 
-import {
-    BiHome, 
-    BiBookAlt, 
-    BiMessage,
-    BiSolidReport,
-    BiStats,
-    BiTask,
-    
-    
-     } from 'react-icons/bi';
-export default class Sidebar extends Component
-{
-  componentDidMount()
-  {
-    fetch("http://localhost:3000/userData",
-    {
-      method: "POST",
-      crossDomain: true,
-      headers:
-      {
-        "Content-Type" : "application/json",
-        Accept: "application/json",
-        "Access-Control-Allow-origin": "*",
-      },
-      body:JSON.stringify(
-        {
-          token: window.localStorage.getItem("token"),
-        }),
-
-    })
-    .then((res)=> res.json())
-    .then((data) =>
-    {
-      console.log(data, "userData");
-    });
+export default class Sidebar extends Component {
+  logout = () => {
+    window.localStorage.clear();
+    window.location.href = "./loginPage";
   }
-  logout=()=>
-  {
-window.localStorage.clear();
-window.location.href="./login"
-  }
-render()
-{
-  return (
-    <div className='menu'>
-      <div className="logo">
-        <BiBookAlt className='logo-icon'/>
-        <h2>My_Dashboard</h2>
-        </div>  
 
+  render() {
+    const { setContent } = this.props;
 
-        <div className="menu--list">
-        <a href="/" className='item activate'>
-            <BiTask className='icon'/>
-             Main
-            </a>
-
-            <a href="/teachers_detail2" className='item activate'>
-            <BiTask className='icon'/>
-             Result
-            </a>
-
-            <Link to="/addteachers" className='item'>
-             <BiSolidReport  className='icon'/>
-             Add Teacher
-            </Link>
-
-            <a href="/add-stud" className='item'>
-            <BiStats  className='icon'/>
-            Add Participants
-            </a>
-
-            <a href="/stud-list" className='item'>
-            <BiMessage  className='icon'/>
-            List of Participants
-            </a>
-            <a href="/criteria-page" className='item'>
-            <BiMessage  className='icon'/>
-            Add Criteria           
-            </a>
-            <a href="/criteria-list" className='item'>
-            <BiMessage  className='icon'/>
-             See Added Criteria
-            </a>
-            <a href="#" className='item'>
-            <BiHelpCircle  className='icon'/>
-            <button onClick={this.logout}  className='logoutt'>Logout</button>    
-            </a>
+    return (
+      <div className='menu'>
+        <div className="logo">
+          <BiBookAlt className='logo-icon' />
+          <h2>DBUTPE Admin Dashboard</h2>
         </div>
-    </div>
-  )
-}
+        <div className="menu--list">
+          <a href="#" className='item activate' onClick={() => setContent('Main')}>
+            <BiTask className='icon' />
+            Main
+          </a>
+          {/* <a href="#" className='item activate' onClick={() => setContent('Result')}>
+            <BiTask className='icon' />
+            Result
+          </a> */}
+          <a href="#" className='item' onClick={() => setContent('AddTeacher')}>
+            <BiSolidReport className='icon' />
+            Add Teacher
+          </a>
+          <a href="#" className='item' onClick={() => setContent('AddParticipants')}>
+            <BiStats className='icon' />
+            Add Participants
+          </a>
+          <a href="#" className='item' onClick={() => setContent('ListParticipants')}>
+            <BiMessage className='icon' />
+            List of Participants
+          </a>
+          {/* <a href="#" className='item' onClick={() => setContent('AddCriteria')}>
+            <BiMessage className='icon' />
+            Add Criteria
+          </a> */}
+          {/* <a href="#" className='item' onClick={() => setContent('SeeCriteria')}>
+            <BiMessage className='icon' />
+            See Added Criteria
+          </a> */}
+          <a href="#" className='item' onClick={() => setContent('Check')}>
+            <BiMessage className='icon' />
+            Result Detail
+          </a>
+
+          <a href="#" className='item' onClick={() => setContent('ListParticipants')}>
+            <BiMessage className='icon' />
+           Report        
+          </a>
+          <a href="#" className='item'>
+            <BiHelpCircle className='icon' />
+            <button onClick={this.logout} className='logoutt'>Logout</button>
+          </a>
+        </div>
+      </div>
+    )
+  }
 }

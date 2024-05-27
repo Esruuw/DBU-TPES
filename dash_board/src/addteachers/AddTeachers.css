@@ -1,109 +1,141 @@
 /* AddTeachers.css */
 
 .containerADDT {
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0px 8px 20px rgb(75, 71, 71);
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .header .text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .header .underline {
-    width: 50px;
-    height: 4px;
-    background-color: #007BFF;
-    margin: 10px auto 0;
-  }
-  
-  .inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Reduced gap between inputs */
-  }
-  
-  .input {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 5px; /* Reduced padding */
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    height: 40px; /* Reduced height */
-  }
-  
-  .input img {
-    width: 20px; /* Reduced icon size */
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  .input input {
-    flex: 1;
-    padding: 5px; /* Reduced padding */
-    border: none;
-    outline: none;
-    font-size: 14px; /* Reduced font size */
-    color: #333;
-  }
-  
-  .input input::placeholder {
-    color: #aaa;
-  }
-  
-  .submit-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .submit .reg-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit .reg-button:hover {
-    background-color: #0056b3;
-  }
-  
-  @media (max-width: 768px) {
-    .containerADDT {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-left: 400px;
+  box-shadow: 0px 8px 20px black;
+  height: 800px !important;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header .text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header .underline {
+  width: 50px;
+  height: 4px;
+  background-color: #007BFF;
+  margin: 10px auto 0;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap between inputs */
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px; /* Reduced padding */
+  border-radius: 5px;
+  height: 40px; /* Reduced height */
+  border: 2px solid #ccc; /* Default border color and size */
+}
+
+.input img {
+  width: 20px; /* Reduced icon size */
+  height: 20px;
+  margin-right: 10px;
+}
+
+.input input {
+  flex: 1;
+  padding: 5px; /* Reduced padding */
+  border: none;
+  outline: none;
+  font-size: 14px; /* Reduced font size */
+  color: #333;
+  font-weight: bold; /* Make input text bold */
+}
+
+.input input::placeholder {
+  color: #aaa;
+  font-weight: bold; /* Bold placeholder text */
+}
+
+/* For Mozilla Firefox */
+.input input::-moz-placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+/* For Internet Explorer */
+.input input:-ms-input-placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+/* For Microsoft Edge */
+.input input::-ms-input-placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+/* Change border color and size on focus */
+.input input:focus {
+  border: none;
+  outline: none;
+}
+
+.input:focus-within {
+  border-color: #007BFF; /* Focused border color */
+  border-width: 2px; /* Focused border size */
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit .reg-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit .reg-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .containerADDT {
       width: 100%;
       padding: 15px;
-    }
-  
-    .header .text {
-      font-size: 20px;
-    }
-  
-    .input {
-      height: 35px; /* Further reduced height for smaller screens */
-    }
-  
-    .input input {
-      font-size: 12px; /* Reduced font size for smaller screens */
-    }
-  
-    .submit .reg-button {
-      font-size: 14px;
-    }
   }
-  
+
+  .header .text {
+      font-size: 20px;
+  }
+
+  .input {
+      height: 35px; /* Further reduced height for smaller screens */
+  }
+
+  .input input {
+      font-size: 12px; /* Reduced font size for smaller screens */
+  }
+
+  .submit .reg-button {
+      font-size: 14px;
+  }
+}

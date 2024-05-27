@@ -1,0 +1,96 @@
+/* TeacherP.css */
+
+
+  
+  .firstText1 {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 8px 20px black;
+
+    color: white;
+  }
+  
+  .firstText1 h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #05445E;
+
+  }
+  
+  .firstText1 h2 {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    color: #05445E;
+
+  }
+  
+  h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    margin: 0;
+    font-weight: normal;
+    color: #555;
+  }
+  
+  .buttonn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #05445E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonn:hover {
+    background-color:#05445E;
+  }
+  
+  @media (max-width: 768px) {
+    .firstText1 h1 {
+      font-size: 2em;
+    }
+  
+    .firstText1 h2 {
+      font-size: 1.2em;
+    }
+  
+    h3 {
+      font-size: 1em;
+    }
+  
+    .buttonn {
+      width: 80%;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .firstText1 h1 {
+      font-size: 1.5em;
+    }
+  
+    .firstText1 h2 {
+      font-size: 1em;
+    }
+  
+    h3 {
+      font-size: 0.9em;
+    }
+  
+    .buttonn {
+      width: 100%;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  }
+  

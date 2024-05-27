@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import API_URL from "../config";
-import "./NextPage.css";
-import { ThirdDetail } from "./ThirdDetail";
+import "./DeptResult.css";
+import { ThirdDetail } from "./ThirdDetail"; // Import ThirdDetail component
 
-function NextPage({ teacher }) {
+function DeptResult({ teacher }) {
   const [evaluations, setEvaluations] = useState([]);
+
+  console.log(teacher)
 
   useEffect(() => {
     const getAllEvaluations = async () => {
       try {
-        const response = await axios.get(`${API_URL}/evaluation/findManyByTeacherId/${teacher && teacher.teacherId}`);
+        const response = await axios.get(`${API_URL}/deptevaluation/findManyByTeacherId/${teacher && teacher.teacherId}`);
         if (response.status === 200) {
           setEvaluations(response.data);
         }
@@ -37,8 +39,8 @@ function NextPage({ teacher }) {
             <th>Subject Knowledge</th>
             <th>Assessment Method</th>
             <th>Interaction With Student</th>
-            <th>Classroom Management</th>
-            <th>Time Management</th>
+            {/* <th>Classroom Management</th>
+            <th>Time Management</th> */}
           </tr>
         </thead>
         <tbody>
@@ -51,8 +53,8 @@ function NextPage({ teacher }) {
               <td>{evaluation.subjectKnowledge}</td>
               <td>{evaluation.assesmentMethod}</td>
               <td>{evaluation.interactionWithStudent}</td>
-              <td>{evaluation.classRoomManagement}</td>
-              <td>{evaluation.timeManagement}</td>
+              {/* <td>{evaluation.classRoomManagement}</td>
+              <td>{evaluation.timeManagement}</td> */}
             </tr>
           ))}
         </tbody>
@@ -80,5 +82,5 @@ function NextPage({ teacher }) {
   );
 }
 
-export default NextPage;
+export default DeptResult;
 

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import API_URL from "../config";
-import "./NextPage.css";
-import { ThirdDetail } from "./ThirdDetail";
+// import "./HrmDetailStudent.css";
+import { ThirdDetail, ThirdDetailStudent } from "./ThirdDetailStudent"; // Import ThirdDetail component
 
-function NextPage({ teacher }) {
+function HrmDetailStudent({ teacher }) {
   const [evaluations, setEvaluations] = useState([]);
 
   useEffect(() => {
@@ -24,10 +24,10 @@ function NextPage({ teacher }) {
   return (
     <div className="evaluation--list">
       <div className="list--header">
-        <h2>Evaluations Result</h2>
-        <a href="/third-detail">See Average</a>
+        {/* <h2>Evaluations Result</h2>
+        <a href="/third-detail">See Average</a> */}
       </div>
-      <table className="list--container">
+      {/* <table className="list--container">
         <thead>
           <tr>
             <th>Teacher ID</th>
@@ -56,9 +56,9 @@ function NextPage({ teacher }) {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
 
-      <div className="feedback--section">
+      {/* <div className="feedback--section">
         {evaluations.map((evaluation) => (
           <div key={evaluation._id} className="feedback--container">
             <div className="feedback--box">
@@ -73,12 +73,12 @@ function NextPage({ teacher }) {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
-      <ThirdDetail evaluations={evaluations} />
+      <ThirdDetailStudent evaluations={evaluations} />
     </div>
   );
 }
 
-export default NextPage;
+export default HrmDetailStudent;
 

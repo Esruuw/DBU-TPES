@@ -1,25 +1,24 @@
 import React, { useState } from "react";
-import NextPage from "../resultdetail2/NextPage";
-import TeachersList from '../resultdetail2/TeachersList';
-
-import './Forms.css';
-import ThreePage from "../resultdetail2/ThreePage";
-import TeachersFormResult from "../TeachersFormR/TeachersFormResult";
+import "./TeacherP.css";
+import TeachersList from "../ResultDetail3/TeachersList";
+import ThreePage from "../ResultDetail3/ThreePage";
+import TeachersPage from "../ResultDetail3/teacherspage";
+import TeachersFormResult from "../TeachersFormResult/TeachersFormResult";
 import DeptResult from "../DeptFormR/DeptResult";
-export default function Forms() {
+import HrmDetailDept from "../ResultDetail3/HrmDetailDept";
+import HrmDetailTeacher from "../ResultDetail3/HrmDetailTeacher";
+import HrmDetailStudent from "../ResultDetail3/HrmDetailStudent";
+
+
+export default function TeacherP() {
   const [current, setCurrent] = useState("teacherList");
   const [selectedTeacher, setSelectedTeacher] = useState();
   const [evaluationView, setEvaluationView] = useState(null);
 
   return (
-    <div> 
-       <div className="firstText1">
-          <h1>DEBRE BERHAN UNIVERSITY</h1>
-          <h2>Teachers Performance Evaluation Form</h2> 
-        </div>
-        <h3>
-        {/* <h4>Select one of the teachers to see the evaluation result!</h4> */}
-
+    <div>
+      
+      <h3>
         {current === "evaluationForm" && !evaluationView && (
           <button className="buttonn" onClick={() => setCurrent("teacherList")}>
             Back to teacher list
@@ -32,29 +31,35 @@ export default function Forms() {
         )}
       </h3>
 
-      {current && current === "teacherList" && (
+      {current === "teacherList" && (
         <TeachersList
           setCurrent={setCurrent}
           setSelectedTeacher={setSelectedTeacher}
         />
       )}
 
-         {current === "evaluationForm" && !evaluationView && (
+      {current === "evaluationForm" && !evaluationView && (
         <ThreePage setEvaluationView={setEvaluationView} />
-      )} 
-
-      {current && current === "studentResult" && (
-        <NextPage teacher={selectedTeacher} /> 
       )}
       
+      {evaluationView === "studentResult" && (
+        <TeachersPage teacher={selectedTeacher} />
+      )}
 
       {evaluationView === "peerResult" && (
         <TeachersFormResult teacher={selectedTeacher} />
       )}
 
-
       {evaluationView === "departmentResult" && (
         <DeptResult teacher={selectedTeacher} />
+      )}
+
+      {evaluationView === "totalResult" && (
+        <>
+          <HrmDetailStudent teacher={selectedTeacher} />
+          <HrmDetailTeacher teacher={selectedTeacher} />
+          <HrmDetailDept teacher={selectedTeacher} />
+        </>
       )}
     </div>
   );

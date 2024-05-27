@@ -25,13 +25,10 @@ const Card = () => {
 
   const handleCardClick = (title) => {
     console.log("Current State:", selectedSemester); // Check the current state before updating
-    if (title !== selectedSemester) {
-      setSelectedSemester(title);
-    } else {
-      setSelectedSemester(null);
-    }
-    console.log("Updated State:", title); // Check what it's being updated to
+    setSelectedSemester(prevState => (prevState === title ? null : title));
+    console.log("Updated State:", selectedSemester); // Check what it's being updated to
   };
+  
 
   return (
     <div className='card--container'>

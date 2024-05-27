@@ -1,0 +1,95 @@
+/* Login.css */
+
+#login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#container1Input {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 18px 30px rgb(0, 0, 0);
+  width: 400px;
+  height: 500px;
+}
+
+
+#error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+#headerA {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#underline {
+  height: 3px;
+  width: 50px;
+  background-color: #333;
+  margin: 0 auto;
+}
+
+#inputsA {
+  margin-bottom: 20px;
+}
+
+#inputAa {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+ #imgb {
+  width: 20px;
+  margin-right: 10px;
+} 
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#forgot-password {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#forgot-password span {
+  color: #333;
+  cursor: pointer;
+}
+
+#submit-container {
+  text-align: center;
+}
+
+.reg-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reg-button:hover {
+  background-color: #0056b3;
+}

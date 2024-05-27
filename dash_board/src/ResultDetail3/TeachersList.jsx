@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./TeachersList.css";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import API_URL from "../config";
+import "./TeachersList.css";
 
 const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
   const [teachers, setTeachers] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getAllTeachers = async () => {
@@ -15,21 +17,21 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
       }
     };
     getAllTeachers();
-  }, [setTeachers]);
+  }, []);
 
-  const handleNewEvaluation = (selectedTeacher) => {
-    setSelectedTeacher(selectedTeacher);
+  const handleTeacherClick = (teacher) => {
+    setSelectedTeacher(teacher);
     setCurrent("evaluationForm");
   };
 
-  return (
-    <div className="teacher--list">
-      <div className="list--header">
-        <h2>List Of Teachers</h2>
-    
-      </div>
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
 
-      <div className="list--containerB">
+  return (
+    <div id="teacher-list">
+      <div id="list-container">
         <table>
           <thead>
             <tr>
@@ -43,7 +45,7 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
               teachers.map((teacher) => (
                 <tr
                   key={teacher._id}
-                  onClick={() => handleNewEvaluation(teacher)}
+                  onClick={() => handleTeacherClick(teacher)}
                 >
                   <td>{teacher.name}</td>
                   <td>{teacher.course}</td>

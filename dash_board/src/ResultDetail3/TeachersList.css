@@ -1,0 +1,82 @@
+#teacher-list {
+  padding: 20px;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  width: 1000px;
+justify-content: center;
+}
+
+#list-container {
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  width: 1000px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #05445E;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 20px;
+  max-width: 400px;
+}
+
+th.name-column, td.name-column {
+  width: 40%; /* Set width for the name column */
+}
+
+th.course-column, td.course-column {
+  width: 30%; /* Set width for the course column */
+}
+
+th.department-column, td.department-column {
+  width: 30%; /* Set width for the department column */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  th, td {
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th {
+    font-size: 16px;
+  }
+
+  td {
+    font-size: 14px;
+  }
+}

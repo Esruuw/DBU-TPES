@@ -1,0 +1,80 @@
+#login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .underline {
+    border-bottom: 2px solid #007bff;
+  }
+  
+  #error-message {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #inputs {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .input img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  #forgot-password span {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  #submit-container {
+    text-align: center;
+  }
+  
+  .reg-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reg-button:hover {
+    background-color: #0056b3;
+  }
+  
