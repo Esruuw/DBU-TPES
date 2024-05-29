@@ -38,9 +38,10 @@ export default function Login() {
           navigate('/hrm_result');
         }
         else if (userFound.user.role === "admin") {
-          navigate('/');
+          localStorage.setItem('studentId', response.data.user.dbuId)
+          navigate('/teachers_page');
           // alert("only students and teachers can access this page");
-          window.location.reload(); // Refresh the page and clear the form
+          // window.location.reload(); // Refresh the page and clear the form
 
         }
       }

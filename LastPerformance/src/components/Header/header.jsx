@@ -102,9 +102,15 @@ function Header() {
         <div id='fourth1'>  
           <div id='fourthfirst'>
             <p>Developers</p>
-            <p id="esru"><a href="esraelwendimu@gmail.com">Esrael Wendimu</a></p>
-            <p id="nahi">Nahom Mesfin</p>
-            <p id="nati">Natinael Temesgen</p>
+            <p id="esru">
+              <a href="mailto:esraelwendimu@gmail.com">Esrael Wendimu</a> 
+            </p>           
+             <p id="nahi">
+             <a href="mailto:Nahommesfin116@gmail.com">Nahom Mesfin</a> 
+              </p>
+            <p id="nati">
+            <a href="mailto:nathanamu17@gmail.com">Natinael Temesgen</a> 
+              </p>
           </div>
           <div id="fourthsecond">
             <p>Contact Colleges</p>

@@ -222,6 +222,37 @@ body {
     max-width: 300px;
 }
 
+#fourthfirst p
+{
+    color: rgb(0, 28, 73);
+    font-size:1.55em;
+}
+#fourthfirst #esru a
+{
+    color: rgb(92, 12, 213);
+ 
+}
+#fourthfirst #nahi a
+{
+    color: rgb(92, 12, 213);
+ 
+}
+#fourthfirst #nati a
+{
+    color: rgb(92, 12, 213);
+ 
+}
+#fourthsecond p
+{
+    color: rgb(0, 28, 73);
+    font-size:1.55em;  
+}
+
+#fourththird p
+{
+    color: rgb(0, 28, 73);
+    font-size:1.55em;   
+}
 #fourth1 #esru, #fourth1 #nahi, #fourth1 #nati,
 #fourth1 #kenu, #fourth1 #hale, #fourth1 #amen,
 #fourth1 #rich, #fourth1 #eba, #fourth1 #roba {
