@@ -8,6 +8,7 @@ import API_URL from "../config";
 const AddStudents = () => {
   const [dbuId, setDbuId] = useState("");
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [role, setRole] = useState("");
   const [error, setError] = useState(null);
 
@@ -17,6 +18,7 @@ const AddStudents = () => {
       const response = await axios.post(`${API_URL}/sims/createOne`, {
         dbuId,
         name,
+        email,
         role,
       });
       if (response.status === 201) {
@@ -62,15 +64,28 @@ const AddStudents = () => {
               placeholder="Participant Name..."
             />
           </div>
+
           <div id="input">
-            <img src={email_icon} alt="" />
+            <img src={user_icon} alt="" />
             <input
               type="text"
-              value={role}
-              onChange={(e) => setRole(e.target.value)}
-              placeholder="Role..."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Participant Email..."
             />
           </div>
+          <div id="input">
+      <img src={email_icon} alt="" />
+      <select value={role} onChange={(e) => setRole(e.target.value)}>
+        <option value="" disabled selected>
+          Role...
+        </option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="admin">Admin</option>
+        <option value="hrm">HRM</option>
+      </select>
+    </div>
         </div>
         <div id="submit-container">
           <div id="submit">

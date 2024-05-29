@@ -40,10 +40,7 @@ const StudentsList = () => {
     <div className="teacher--list">
       <div className="list--header">
         <h2>List Of Students</h2>
-        <select>
-          <option value="english">English</option>
-          <option value="oromo">Oromo</option>
-        </select>
+    
       </div>
 
       {/* Table structure */}
@@ -52,6 +49,7 @@ const StudentsList = () => {
           <tr className="table--header">
              <th>Evaluation_Id</th>
              <th>Name</th>
+             <th>Email</th>
             <th>Role</th>
             <th>Action</th>
             
@@ -65,6 +63,7 @@ const StudentsList = () => {
             <tr key={student._id}>
               <td>{student.dbuId}</td>
               <td>{student.name}</td>
+              <td>{student.email}</td>
 
               <td>{student.role}</td>
               {/* <td>{student.department}</td>

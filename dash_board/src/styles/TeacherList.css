@@ -1,57 +1,83 @@
+#teacher-list {
+  width: 100%;
+}
 
-.teacher--list {
-    width: 100%;
-  }
-  .teacher--list .list--header h2
-  {
+#list-header h2 {
+  font-size: 20px;
+  width: 130px;
+}
 
-    font-size: 20px;
-    width: 130px;
-  }
-  .teacher--table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .teacher--table th,
-  .teacher--table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px; 
-  }
-  
-  .teacher--table th {
-    background-color: #f2f2f2; /* Color for header row */
-  }
-  
-  .table--header th {
-    background-color: white; /* Color for header cells */
-    color: black;
-  }
-  
-  .table--header th,
-  .table--header td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .table--header td:last-child,
-  .teacher--table td:last-child {
-    text-align: center; /* Center align delete button */
-  }
-  
-  button {
-    background-color:  #526d82;; /* Red color for delete button */
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  button:hover {
-    background-color: #d32f2f; /* Darker red color on hover */
-  }
-  
+#teacher-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#teacher-table th,
+#teacher-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px; 
+}
+
+#teacher-table th {
+  background-color: #f2f2f2; /* Color for header row */
+}
+
+#table-header th {
+  background-color: white; /* Color for header cells */
+  color: black;
+}
+
+#table-header th,
+#table-header td {
+  padding: 10px;
+  text-align: left;
+}
+
+#table-header td:last-child,
+#teacher-table td:last-child {
+  text-align: center; /* Center align delete button */
+}
+
+button {
+  background-color: #526d82; /* Color for delete button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #d32f2f; /* Darker color on hover */
+}
+
+/* Flexbox styles for the schedule column */
+.schedule-container {
+  display: flex;
+  align-items: center;
+}
+
+.schedule-container input[type="text"] {
+  margin-right: 8px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.schedule-container button {
+  background-color: #526d82;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.schedule-container button:hover {
+  background-color: #3e4f61;
+}

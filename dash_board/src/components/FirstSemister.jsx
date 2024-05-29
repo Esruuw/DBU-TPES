@@ -48,19 +48,16 @@ const FirstSemester = () => {
   };
 
   return (
-    <div className="teacher--list">
-      <div className="list--header">
+    <div id="teacher-list">
+      <div id="list-header">
         <h2>List Of Teachers</h2>
-        <select>
-          <option value="english">English</option>
-          <option value="oromo">Oromo</option>
-        </select>
+      
       </div>
 
       {/* Table structure */}
-      <table className="teacher--table">
+      <table id="teacher-table">
         <thead>
-          <tr className="table--header">
+          <tr id="table-header">
             <th>Name</th>
             <th>Course</th>
             <th>Department</th>

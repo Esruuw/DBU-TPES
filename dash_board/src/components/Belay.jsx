@@ -53,10 +53,7 @@ const TeacherList = () => {
     } catch (error) {
       console.error("Error fetching teachers:", error);
     }
-  };
-
-  // const today = new Date();
-  // console.log(today);
+  }; 
 
   return (
     <div id="teacher-list">
@@ -68,7 +65,6 @@ const TeacherList = () => {
       <table id="teacher-table">
         <thead>
           <tr id="table-header">
-          <th>Eval-Id</th>
             <th>Name</th>
             <th>Course</th>
             <th>Department</th>
@@ -80,35 +76,29 @@ const TeacherList = () => {
         </thead>
         <tbody>
           {/* Map through teachers */}
-          {teachers.map((teacher) => (
-            <tr key={teacher._id}>
-              <td>{teacher.teacherId}</td>
-              <td>{teacher.name}</td>
-              <td>{teacher.course}</td>
-              <td>{teacher.department}</td>
-              <td>{teacher.year}</td>
-              <td>{teacher.semester}</td>
-              <td>
-                <button onClick={() => handleDeleteTeacher(teacher._id)}>
-                  Delete
-                </button>
-              </td>
-              <td> {teacher.scheduleTime}</td>
-              <td>
-                <div className="schedule-container">
-                  <input
-                    type="date"
-                    onChange={(event) =>
-                      handleScheduleChange(teacher._id, event)
-                    }
-                  />
-                  <button onClick={() => handleScheduleSubmit(teacher._id)}>
-                    Schedule
-                  </button>
-                </div>
-              </td>
-            </tr>
-          ))}
+          {teachers.map(
+            (teacher) =>
+              teacher.scheduleTime &&
+              new Date(teacher.scheduleTime) > new Date() && (
+                <tr key={teacher._id}>
+                  <td>{teacher.name}</td>
+                  <td>{teacher.course}</td>
+                  <td>{teacher.department}</td>
+                  <td>{teacher.year}</td>
+                  <td>{teacher.semester}</td>
+                  <td>
+                    <button onClick={() => handleDeleteTeacher(teacher._id)}>
+                      Delete
+                    </button>
+                  </td>
+                  <td>
+                    <div className="schedule-container">
+                      {teacher.scheduleTime} 
+                    </div>
+                  </td>
+                </tr>
+              )
+          )}
         </tbody>
       </table>
     </div>

@@ -17,18 +17,14 @@ const courses = [
     title: "Second Semister",
     icon: <BiBuilding />,
   },
-
 ];
 
 const Card = () => {
   const [selectedSemester, setSelectedSemester] = useState(null);
 
   const handleCardClick = (title) => {
-    console.log("Current State:", selectedSemester); // Check the current state before updating
     setSelectedSemester(prevState => (prevState === title ? null : title));
-    console.log("Updated State:", selectedSemester); // Check what it's being updated to
   };
-  
 
   return (
     <div className='card--container'>
@@ -46,7 +42,6 @@ const Card = () => {
       {selectedSemester === "First Semister" && <FirstSemister />}
       {selectedSemester === "Second Semister" && <SecondSemister />}
       {selectedSemester === "Total Teachers" && <TeacherList />}
-      {console.log("Rendering with selectedSemester:", selectedSemester)} {/* Add a log to check rendering */}
     </div>
   );
 }
