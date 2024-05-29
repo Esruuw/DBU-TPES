@@ -23,13 +23,13 @@ function Header() {
             <a href="Header" id="nav_link">Home</a>
           </li> 
           <li id="list_nav"> 
-            <a href="#" id="nav_link">Needs</a>
+            <a href="#secondright" id="nav_link">Needs</a>
           </li>
           <li id="list_nav"> 
-            <a href="#" id="nav_link">Members</a>
+            <a href="#thirdpage" id="nav_link">Members</a>
           </li>
           <li id="list_nav"> 
-            <a href="#" id="nav_link">Contact Us</a>
+            <a href="#fourthpage" id="nav_link">Contact Us</a>
           </li>
           <li id="list_nav"> 
             <a href="/login" id="nav_link">Login</a>
