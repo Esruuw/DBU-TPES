@@ -1,5 +1,4 @@
 // Login.jsx
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -33,9 +32,14 @@ export default function Login() {
         } else if (userFound.user.role === "teacher") {
           localStorage.setItem('studentId', response.data.user.dbuId)
           navigate('/teachers_page');
-        } else if (userFound.user.role === "admin") {
-          // navigate('/mm');
-          alert("only students can access this page");
+        }
+        else if (userFound.user.role === "hrm") {
+          localStorage.setItem('studentId', response.data.user.dbuId)
+          navigate('/hrm_result');
+        }
+        else if (userFound.user.role === "admin") {
+          navigate('/');
+          // alert("only students and teachers can access this page");
           window.location.reload(); // Refresh the page and clear the form
 
         }

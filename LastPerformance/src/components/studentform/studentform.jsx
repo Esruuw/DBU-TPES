@@ -23,6 +23,27 @@ const Studentform = ({ teacher }) => {
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
+
+    // Check if all required fields are filled
+    const requiredFields = [
+      performance,
+      punctuality,
+      subjectKnowledge,
+      assesmentMethod,
+      interactionWithStudent,
+      classRoomManagement,
+      communicationWithStudent,
+      classRoom,
+      timeManagement
+    ];
+
+    const allFieldsFilled = requiredFields.every((field) => field !== "");
+
+    if (!allFieldsFilled) {
+      alert("Please fill all criteria properly");
+      return;
+    }
+
     try {
       const response = await axios.post(
         `http://localhost:3001/evaluation/createOne`,
@@ -44,15 +65,16 @@ const Studentform = ({ teacher }) => {
       );
       if (response.status === 201) {
         console.log(response.data);
-        alert("teachers evaluation summition succeed...")
+        alert("Teacher's evaluation submission succeeded...");
         window.location.reload(); // Refresh the page and clear the form
 
-        console.log("teachers evaluation summition succeed...");
+        console.log("Teacher's evaluation submission succeeded...");
       }
     } catch (e) {
       console.log(e);
     }
   };
+
   const options = [
     { label: "Very Low", value: "veryLow" },
     { label: "Low", value: "low" },
@@ -65,7 +87,7 @@ const Studentform = ({ teacher }) => {
     <form onSubmit={handleSubmitForm}>
       <div className="container11">
         <h2 align="center">
-          {teacher && teacher.teacherId} |{teacher && teacher.name} |{" "}
+          {teacher && teacher.teacherId} | {teacher && teacher.name} |{" "}
           {teacher && teacher.department}
         </h2>
         <div className="formdiv">
@@ -94,7 +116,7 @@ const Studentform = ({ teacher }) => {
           </div>
 
           <div className="formdiv2">
-            <h2>Puncuality</h2>
+            <h2>Punctuality</h2>
             {options.map((option) => (
               <div key={option.value} className="formdiv2b">
                 <h4
@@ -116,8 +138,6 @@ const Studentform = ({ teacher }) => {
               </div>
             ))}
           </div>
-
-          {/* borderrrrrrrrrrrrrrr */}
 
           <div className="formdiv3">
             <h2>Subject Knowledge</h2>
@@ -143,11 +163,10 @@ const Studentform = ({ teacher }) => {
             ))}
           </div>
         </div>
-        {/* borderrrrrrrrrrrrrrr */}
 
         <div className="formdivsecond">
           <div className="formdivsecond1">
-            <h2>Assesment Method</h2>
+            <h2>Assessment Method</h2>
             {options.map((option) => (
               <div key={option.value} className="formdivsecond1b">
                 <h4
@@ -170,7 +189,6 @@ const Studentform = ({ teacher }) => {
             ))}
           </div>
 
-          {/* borderrrrrrrrrrrrrrr */}
           <div className="formdivsecond2">
             <h2>Interaction With Student</h2>
             {options.map((option) => (
@@ -220,47 +238,9 @@ const Studentform = ({ teacher }) => {
               </div>
             ))}
           </div>
-       
         </div>
-        {/* borderrrrr */}
 
         <div className="formdivthird">
-          {/* borderrrrrrrrrrrrrrr */}
-          {/* <div className="formdivthird2">
-          <h2>Interaction With Student</h2>
-
-          <div className="formdivthird2a">
-            <h4>
-              Very Low <input type="checkbox" />
-            </h4>
-          </div>
-
-          <div className="formdivthird2b">
-            <h4>
-              Low <input type="checkbox" />
-            </h4>
-          </div>
-
-          <div className="formdivthird2c">
-            <h4>
-              Medium <input type="checkbox" />
-            </h4>
-          </div>
-
-          <div className="formdivthird2d">
-            <h4>
-              Good <input type="checkbox" />
-            </h4>
-          </div>
-
-          <div className="formdivthird2e">
-            <h4>
-              Very Good <input type="checkbox" />
-            </h4>
-          </div>
-        </div> */}
-
-          {/* borderrrrrrrrrrrrrrr */}
           <div className="formdivthird3">
             <h2>Class Room</h2>
             {options.map((option) => (

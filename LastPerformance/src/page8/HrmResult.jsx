@@ -45,7 +45,7 @@ export default function HrmResult() {
       {current && current === "evaluationForm" && (
         <>
         <HrmDetailStudent teacher={selectedTeacher} /> 
-        <TeacherCriteria/>
+        {/* <TeacherCriteria/> */}
         </>
       )}
 

@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Updated import
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import axios from "axios";
 import API_URL from "../../config";
 import "./TeachersList.css";
 
 const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
   const [teachers, setTeachers] = useState();
-  const navigate = useNavigate(); // Updated to useNavigate
+  const [loggedUserId, setLoggedUserId] = useState(localStorage.getItem('studentId'));
+
+
+  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
     const getAllTeachers = async () => {
@@ -16,8 +19,9 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
         console.log(response.data);
       }
     };
+    setLoggedUserId(localStorage.getItem('studentId'));
     getAllTeachers();
-  }, []);
+  }, [setLoggedUserId]);
 
   const handleTeacherClick = (teacher) => {
     setSelectedTeacher(teacher);
@@ -29,23 +33,23 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
     localStorage.removeItem("token"); // or any other storage used
 
     // Redirect to login page
-    navigate("/login"); // Updated to use navigate
+    navigate("/login");
   };
 
   return (
     <div className="teacher--listB">
-      <div className="bothh">
+  <div className="bothh">
         <div className="list--headerB">
           <a href="/teachers_form_peer">
-            <button>Evaluate Peer</button>
+            <h2>Evaluate Peer</h2>
+            <h2>{loggedUserId}</h2>
           </a>
         </div>
         <div className="bothh2">
-        <button onClick={handleLogout}>Logout</button> {/* Add logout button */}
-
+          <button onClick={handleLogout}>Logout</button>
         </div>
       </div>
-
+    
       <div className="list--containerB">
         <table>
           <thead>
@@ -57,11 +61,10 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
           </thead>
           <tbody>
             {teachers &&
-              teachers.map((teacher) => (
+              teachers.map((teacher) => teacher.teacherId === loggedUserId && (
                 <tr
                   key={teacher._id}
-                  onClick={() => handleTeacherClick(teacher)}
-                >
+                  onClick={() => handleTeacherClick(teacher)}>
                   <td>{teacher.name}</td>
                   <td>{teacher.course}</td>
                   <td>{teacher.department}</td>
@@ -75,5 +78,3 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
 };
 
 export default TeachersList;
-
-

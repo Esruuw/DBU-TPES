@@ -1,83 +1,129 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import API_URL from "../../config";
 import "./TeacherList.css";
 
 const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
-  const [teachers, setTeachers] = useState();
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [teachers, setTeachers] = useState([]);
+  const [scheduleTime, setScheduleTime] = useState();
+  const [updatedTeacherId, setUpdatedTeacherId] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getAllTeachers = async () => {
-      const response = await axios.get(`${API_URL}/teacher/findAll`);
-      if (response.status === 200) {
-        setTeachers(response.data);
-        console.log(response.data);
+      try {
+        const response = await axios.get(`${API_URL}/teacher/findAll`);
+        if (response.status === 200) {
+          setTeachers(response.data);
+        }
+      } catch (error) {
+        console.error("Error fetching teachers:", error);
       }
     };
     getAllTeachers();
   }, []);
 
-  const handleTeacherClick = (teacher) => {
-    setSelectedTeacher(teacher);
-    setCurrent("evaluationForm");
+  const handleDeleteTeacher = async (teacherId) => {
+    try {
+      const response = await axios.delete(
+        `${API_URL}/teacher/deleteById/${teacherId}`
+      );
+      if (response.status === 200) {
+        setTeachers(teachers.filter((teacher) => teacher._id !== teacherId));
+      }
+    } catch (error) {
+      console.error("Error deleting teacher:", error);
+    }
+  };
+
+  const handleScheduleChange = (teacherId, event) => {
+    setUpdatedTeacherId(teacherId);
+    setScheduleTime(event.target.value);
+  };
+
+  const handleScheduleSubmit = async () => {
+    try {
+      const response = await axios.put(
+        `${API_URL}/teacher/updateById/${updatedTeacherId}`,
+        { scheduleTime }
+      );
+      if (response.status === 200) {
+        setTeachers(response.data);
+      }
+    } catch (error) {
+      console.error("Error updating schedule:", error);
+    }
+  };
+
+  const handleRowClick = (teacher) => {
+    if (isToday(teacher.scheduleTime)) {
+      setSelectedTeacher(teacher);
+      setCurrent("evaluationForm");
+    }
+  };
+
+  const isToday = (dateString) => {
+    const today = new Date();
+    const date = new Date(dateString);
+    return (
+      date.getDate() === today.getDate() &&
+      date.getMonth() === today.getMonth() &&
+      date.getFullYear() === today.getFullYear()
+    );
   };
 
   const handleLogout = () => {
-    // Clear authentication tokens or session data
-    localStorage.removeItem("token"); // or any other storage used
-
-    // Redirect to login page
+    localStorage.removeItem("token");
     navigate("/login");
   };
 
   return (
-    <div className="teacher--listB">
+    <div id="teacher-list">
       <div className="bothh">
-        <div className="bothh2">
-        <h4 
-  onClick={handleLogout} 
-  style={{ 
-    cursor: "pointer", 
-    marginLeft: "1600px", // Adjust margin-left as needed
-    width: "100px", // Adjust width as needed
-    height: "50px", // Adjust height as needed
-    backgroundColor: "#f0f0f0", // Adjust background color as needed
-    border: "1px solid #ccc", // Adjust border as needed
-    borderRadius: "5px", // Adjust border-radius as needed
-    textAlign: "center",     
-  }}
->
-  Logout
-</h4>
-
-        </div>
+        {/* <div className="list--headerB">
+          <a href="/teachers_form_peer">
+            <h2>Evaluate Peer</h2>
+          </a>
+        </div> */}
+        {/* <div className="bothh2">
+          <button onClick={handleLogout}>Logout</button>
+        </div> */}
       </div>
-    
-      <div className="list--containerB">
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Course</th>
-              <th>Department</th>
-            </tr>
-          </thead>
-          <tbody>
-            {teachers &&
-              teachers.map((teacher) => (
+
+      <table id="teacher-table">
+        <thead>
+          <tr id="table-header">
+            <th>Name</th>
+            <th>Course</th>
+            <th>Department</th>
+            <th>Schedule Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          {teachers.map((teacher) => {
+            const scheduleDate = new Date(teacher.scheduleTime);
+            const isFutureSchedule = scheduleDate > new Date();
+            const isTodaySchedule = isToday(teacher.scheduleTime);
+
+            if (isFutureSchedule || isTodaySchedule) {
+              return (
                 <tr
                   key={teacher._id}
-                  onClick={() => handleTeacherClick(teacher)}>
+                  onClick={() => handleRowClick(teacher)}
+                  style={{ cursor: isTodaySchedule ? 'pointer' : 'default' }}
+                >
                   <td>{teacher.name}</td>
                   <td>{teacher.course}</td>
                   <td>{teacher.department}</td>
+                  <td>{teacher.scheduleTime}</td>
                 </tr>
-              ))}
-          </tbody>
-        </table>
-      </div>
+              );
+            }
+            return null;
+          })}
+        </tbody>
+      </table>
     </div>
   );
 };

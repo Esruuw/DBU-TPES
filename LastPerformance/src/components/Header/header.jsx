@@ -23,7 +23,7 @@ function Header() {
             <a href="Header" id="nav_link">Home</a>
           </li> 
           <li id="list_nav"> 
-            <a href="#" id="nav_link">About</a>
+            <a href="#" id="nav_link">Needs</a>
           </li>
           <li id="list_nav"> 
             <a href="#" id="nav_link">Members</a>
@@ -40,7 +40,7 @@ function Header() {
       <div id='firstPage'>
         <div id='firstPage1'>
           <h1>DBU Teachers Performance Evaluation System</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>The Debre Brehan University Teachers Performance Evaluation System is a comprehensive digital tool designed to enhance the quality of education and academic administration at Debre Brehan University, one of Ethiopia's prominent higher education institutions.</p>
           <div id='buttons'>
             <button id='button1'>
               <a href="RegistrationForm" id="nav_link">Teacher</a> 
@@ -102,7 +102,7 @@ function Header() {
         <div id='fourth1'>  
           <div id='fourthfirst'>
             <p>Developers</p>
-            <p id="esru">Esrael Wendimu</p>
+            <p id="esru"><a href="esraelwendimu@gmail.com">Esrael Wendimu</a></p>
             <p id="nahi">Nahom Mesfin</p>
             <p id="nati">Natinael Temesgen</p>
           </div>
