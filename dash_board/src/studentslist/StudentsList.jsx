@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../styles/TeacherList.css";
+// import "../styles/TeacherList.css";
 import axios from "axios";
 import API_URL from "../config";
-
+import './StudentsList.css'
 const StudentsList = () => {
   const [students, setStudents] = useState([]);
 

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { BiLogoHtml5, BiLogoAndroid, BiBuilding } from 'react-icons/bi';
+import { BiCalendarEdit } from "react-icons/bi";
+import { PiChalkboardTeacher } from "react-icons/pi";
+import { FaCalendarMinus } from "react-icons/fa";
 import TeacherList from './TeacherList'; // Import TeacherList component
 import FirstSemister from './FirstSemister'; // Import FirstSemister component
 import SecondSemister from './SecondSemister'; // Import SecondSemister component
@@ -7,15 +9,15 @@ import SecondSemister from './SecondSemister'; // Import SecondSemister componen
 const courses = [
   {
     title: "Total Teachers",
-    icon: <BiLogoHtml5 />,
+    icon: <PiChalkboardTeacher />,
   },
   {
     title: "First Semister",
-    icon: <BiLogoAndroid />,
+    icon: <BiCalendarEdit />,
   },
   {
     title: "Second Semister",
-    icon: <BiBuilding />,
+    icon: < FaCalendarMinus />,
   },
 ];
 
