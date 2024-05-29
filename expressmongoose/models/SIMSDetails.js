@@ -4,6 +4,7 @@ const SIMSInfoSchema = new mongoose.Schema(
         name: String,
         dbuId: { type: String, unique: true },
         role: String,
+        email:String,
     },
     {
         collection: "SIMSInfo",

@@ -18,7 +18,7 @@ const SIMS_DB_Info = simsDbConnection.model("SIMSInfo", SIMSInfoSchema);
 const login = async (req, res) => {
   const { email, password } = req.body;
   if(!email || !password){
-    return res.status(400).send({message: "baq request."})
+    return res.status(400).send({message: "bad request."})
   }
   try {
     const foundUser = await user.findOne({ email });

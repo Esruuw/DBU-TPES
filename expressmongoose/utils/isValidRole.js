@@ -1,6 +1,6 @@
 
 const isValidRole = (role) => {
-    const roles = ['admin', 'student', 'teacher'];
+    const roles = ['admin', 'student', 'teacher','hrm'];
     if (roles.includes(role)) {
         return true;
     }

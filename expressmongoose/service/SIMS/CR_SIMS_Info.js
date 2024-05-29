@@ -6,8 +6,8 @@ const { isValidRole } = require('../../utils/isValidRole');
 const SIMS_DB_Info = simsDbConnection.model("SIMSInfo", SIMSInfoSchema);
 
 const createOne = async (req, res) => {
-    const { dbuId, name, role } = req.body;
-    if (!dbuId || !name || !role) {
+    const { dbuId, name,email,role } = req.body;
+    if (!dbuId || !name || !role || !email) {
         return res.status(400).send({ message: "Bad request." });
     }
 
@@ -23,6 +23,7 @@ const createOne = async (req, res) => {
         const sims_db_Info = await SIMS_DB_Info.create({
             dbuId,
             name,
+            email,
             role,
         });
         return res.status(201).send(sims_db_Info);
