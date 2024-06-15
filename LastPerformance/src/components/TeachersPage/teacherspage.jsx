@@ -27,7 +27,7 @@ function TeachersPage({ teacher }) {
         {/* <h2>Evaluations Result</h2>
         <a href="/third-detail">See Average</a> */}
       </div>
-      <table className="list--container">
+      {/* <table className="list--container">
         <thead>
           <tr>
             <th>Teacher ID</th>
@@ -56,7 +56,7 @@ function TeachersPage({ teacher }) {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
 
       <div className="feedback--section">
         {evaluations.map((evaluation) => (

@@ -71,11 +71,12 @@ export function ThirdDetail({ evaluations }) {
 
   return (
     <div className='c1'>
-      <div className='cont'><h1>Teachers Average Result</h1></div>
+      <div className='cont'>
+        {/* <h1>Teachers Average Result</h1> */}
+        </div>
       <div className="containerr">
         {criteriaList.map((criteria) => renderDistribution(criteria))}
         <div className="column">
-          <h2>Average Percentage of All Criteria:</h2>
           {criteriaList.map((criteria) => {
             const { distribution, totalRatings } = calculateRatingDistribution(criteria);
             const average = (

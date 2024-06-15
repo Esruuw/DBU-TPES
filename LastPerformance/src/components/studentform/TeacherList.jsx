@@ -81,14 +81,14 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
   return (
     <div id="teacher-list">
       <div className="bothh">
-        <div className="list--headerB">
+        {/* <div className="list--headerB">
           <a href="/teachers_form_peer">
             <button>Evaluate Peer</button>
           </a>
-        </div> 
-         <div className="bothh2">
+        </div>  */}
+         {/* <div className="bothh2">
           <button onClick={handleLogout}>Logout</button>
-        </div>
+        </div> */}
       </div>
 
       <table id="teacher-table">

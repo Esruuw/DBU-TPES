@@ -1,49 +1,125 @@
 /* Container for the whole page */
 .page-container {
-    padding: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px; /* Adjust the padding to avoid content being hidden behind the fixed header */
+}
+
+/* Styling for the fixed header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-header .firstText1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fixed-header .firstText1 h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Container for the buttons in the header */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Styling for the Download button */
+.download-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+/* Styling for the Logout button */
+.logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Styling for the back button */
+.button-back {
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-back:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the TeachersList component */
+.teachers-list {
+  margin-bottom: 20px;
+}
+
+/* Styling for the evaluation forms */
+.evaluation-forms {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Styling for the evaluation form cards */
+.evaluation-form-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fixed-header .firstText1 {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Styling for the heading */
-  .firstText1 h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  /* Styling for the button */
-  .button-back {
-    margin-bottom: 20px;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button-back:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Styling for the TeachersList component */
-  .teachers-list {
-    margin-bottom: 20px;
-  }
-  
-  /* Styling for the evaluation forms */
+
   .evaluation-forms {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
   }
-  
-  /* Styling for the evaluation form cards */
-  .evaluation-form-card {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
+}

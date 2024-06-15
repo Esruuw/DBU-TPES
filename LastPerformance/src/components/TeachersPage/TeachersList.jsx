@@ -41,10 +41,12 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
   <div className="bothh">
         <div className="list--headerB">
           <a href="/teachers_form_peer">
-            <h2>Evaluate Peer</h2>
-            <h2>{loggedUserId}</h2>
+            <button>Evaluate Peer</button>
           </a>
+
         </div>
+        <h2>User: {loggedUserId}</h2>
+
         <div className="bothh2">
           <button onClick={handleLogout}>Logout</button>
         </div>

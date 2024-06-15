@@ -3,7 +3,7 @@
 }
 
 .list--header {
-  display: flex;
+  display: flex ;
   gap: 250px;
 }
 
@@ -21,7 +21,7 @@
   width: 10%; /* Set fixed width for header */
   text-decoration: dotted;
   cursor: pointer;
-  color: #05445E;
+  color: #d01111;
   font-size: 20px;
 }
 

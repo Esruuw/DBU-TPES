@@ -1,96 +1,102 @@
-/* TeacherP.css */
+/* Container for the fixed header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 8px 20px black;
+  z-index: 1000;
+}
 
+/* Container for the content to ensure it doesn't overlap with the fixed header */
+.content {
+  margin-top: 80px; /* Adjust based on the height of the fixed header */
+  padding: 20px;
+}
 
-  
-  .firstText1 {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 8px 20px black;
+/* Styling for the header content */
+.firstText1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #05445E;
+}
 
-    color: white;
-  }
-  
+/* Styling for the university title */
+.firstText1 h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Styling for the download button */
+.download-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+/* General styles for headings */
+h3 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.2em;
+}
+
+h4 {
+  margin: 0;
+  font-weight: normal;
+  color: #555;
+}
+
+/* Styling for buttons */
+.buttonn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #05445E;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.buttonn:hover {
+  background-color: #036282;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .firstText1 h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #05445E;
+    font-size: 2em;
+  }
 
-  }
-  
-  .firstText1 h2 {
-    font-size: 1.5em;
-    margin: 10px 0 0;
-    color: #05445E;
-
-  }
-  
-  h3 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.2em;
-  }
-  
-  h4 {
-    margin: 0;
-    font-weight: normal;
-    color: #555;
-  }
-  
   .buttonn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #05445E;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    width: 80%;
+    padding: 15px;
   }
-  
-  .buttonn:hover {
-    background-color:#05445E;
+}
+
+@media (max-width: 480px) {
+  .firstText1 h1 {
+    font-size: 1.5em;
   }
-  
-  @media (max-width: 768px) {
-    .firstText1 h1 {
-      font-size: 2em;
-    }
-  
-    .firstText1 h2 {
-      font-size: 1.2em;
-    }
-  
-    h3 {
-      font-size: 1em;
-    }
-  
-    .buttonn {
-      width: 80%;
-      padding: 15px;
-    }
+
+  .buttonn {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
   }
-  
-  @media (max-width: 480px) {
-    .firstText1 h1 {
-      font-size: 1.5em;
-    }
-  
-    .firstText1 h2 {
-      font-size: 1em;
-    }
-  
-    h3 {
-      font-size: 0.9em;
-    }
-  
-    .buttonn {
-      width: 100%;
-      padding: 10px;
-      font-size: 0.9em;
-    }
-  }
-  
+}

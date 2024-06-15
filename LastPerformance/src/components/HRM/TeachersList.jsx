@@ -24,14 +24,6 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
     setCurrent("evaluationForm");
   };
 
-  const handleLogout = () => {
-    // Clear authentication tokens or session data
-    localStorage.removeItem("token"); // or any other storage used
-
-    // Redirect to login page
-    navigate("/login"); // Updated to use navigate
-  };
-
   return (
     <div className="teacher--listB">
       <div className="bothh">
@@ -40,10 +32,6 @@ const TeachersList = ({ setCurrent, setSelectedTeacher }) => {
             <h2>Evaluate Peer</h2>
           </a>
         </div> */}
-        <div className="bothh2">
-        <button onClick={handleLogout}>Logout</button> {/* Add logout button */}
-
-        </div>
       </div>
 
       <div className="list--containerB">

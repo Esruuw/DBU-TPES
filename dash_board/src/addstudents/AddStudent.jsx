@@ -82,7 +82,7 @@ const AddStudents = () => {
         </option>
         <option value="student">Student</option>
         <option value="teacher">Teacher</option>
-        <option value="admin">Admin</option>
+        <option value="dept">Dept</option>
         <option value="hrm">HRM</option>
       </select>
     </div>

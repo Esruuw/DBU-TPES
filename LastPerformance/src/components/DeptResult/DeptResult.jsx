@@ -25,10 +25,13 @@ function DeptResult({ teacher }) {
 
   return (
     <div className="evaluation--list">
-      <div className="list--header">
+      {/* <div className="list--header">
         <h2>Evaluations Result</h2>
         <a href="/third-detail">See Average</a>
-      </div>
+      </div> */}
+      
+      {/* Commented out table part */}
+      {/*
       <table className="list--container">
         <thead>
           <tr>
@@ -39,8 +42,6 @@ function DeptResult({ teacher }) {
             <th>Subject Knowledge</th>
             <th>Assessment Method</th>
             <th>Interaction With Student</th>
-            {/* <th>Classroom Management</th>
-            <th>Time Management</th> */}
           </tr>
         </thead>
         <tbody>
@@ -53,12 +54,11 @@ function DeptResult({ teacher }) {
               <td>{evaluation.subjectKnowledge}</td>
               <td>{evaluation.assesmentMethod}</td>
               <td>{evaluation.interactionWithStudent}</td>
-              {/* <td>{evaluation.classRoomManagement}</td>
-              <td>{evaluation.timeManagement}</td> */}
             </tr>
           ))}
         </tbody>
       </table>
+      */}
 
       <div className="feedback--section">
         {evaluations.map((evaluation) => (
@@ -83,4 +83,3 @@ function DeptResult({ teacher }) {
 }
 
 export default DeptResult;
-

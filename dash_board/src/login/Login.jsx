@@ -19,11 +19,13 @@ export default function Login() {
         email,
         password,
       });
+      console.log('helo');
       if (response.status === 200) {
         const userFound = response.data;
         localStorage.setItem("token", userFound.token);
 
-        console.log(response.data)
+        console.log("response", response.data)
+        console.log("response", response.data.user.role)
         if (userFound.user.role === "admin") {
           navigate('/');
         } else if (userFound.user.role === "student") {

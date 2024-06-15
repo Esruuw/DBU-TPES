@@ -1,34 +1,79 @@
-.firstText1 h1
-{
-    text-align: center;
+/* Forms.css */
+
+/* Styling for the heading */
+.firstText1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .firstText1 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(13, 120, 220);
     font-size: 40px;
-    font-weight: 200px;
+    font-weight: 200;
     text-shadow: 5px, 5px;
     margin-top: 15px;
-}
-.firstText1 h2
-{
+    flex-grow: 1;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(13, 120, 220);
-    font-size: 20px;
-    font-weight: 200px;
-    text-shadow: 5px, 5px;  
-}
- h3 h4
-{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #05445E;
-    font-size: 20px;
-    font-weight: 100px;
-    text-shadow: 5px, 5px; 
-    margin-top: 15px;
-}
-
-.button
-{
-    align-items: center;
-}
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Styling for the Logout button */
+  .button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the evaluation forms */
+  .evaluation-forms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .evaluation-forms button {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .firstText1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .button-container {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .evaluation-forms {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button-container button {
+      padding: 8px 16px;
+    }
+  
+    .firstText1 h1 {
+      font-size: 30px;
+    }
+  }
+  

@@ -16,3 +16,4 @@ const AddStudentInfoSchema = new mongoose.Schema(
 );
 
 mongoose.model("AddStudentInfo", AddStudentInfoSchema);
+

@@ -39,7 +39,7 @@ const StudentsList = () => {
   return (
     <div className="teacher--list">
       <div className="list--header">
-        <h2>List Of Students</h2>
+        <h2>List Of Participants</h2>
     
       </div>
 

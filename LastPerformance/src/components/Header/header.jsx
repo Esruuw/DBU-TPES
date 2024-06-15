@@ -90,9 +90,9 @@ function Header() {
           The department head serves as the system admin, overseeing evaluations and ensuring smooth operation.
           </p>
           <p id="box4">
-          <h2> Dean </h2> 
+          <h2> College Dean </h2> 
 
-          Dean logs in to evaluate both department heads and teachers.
+          Collage Dean logs in to the system to evaluate both department heads and teachers.
           </p>
         </div>
       </div>
@@ -109,20 +109,18 @@ function Header() {
              <a href="mailto:Nahommesfin116@gmail.com">Nahom Mesfin</a> 
               </p>
             <p id="nati">
-            <a href="mailto:nathanamu17@gmail.com">Natinael Temesgen</a> 
+            <a href="mailto:nathanamu17@gmail.com">Dembelo Abebe</a> 
               </p>
           </div>
           <div id="fourthsecond">
             <p>Contact Colleges</p>
-            <p id="kenu">Kenean</p>
-            <p id="hale">Halelujah</p>
-            <p id="amen">Amen</p>
+            <p id="kenu">Mr. Temesgen T</p>
+            <p id="hale">0911223344</p>
           </div>
           <div id="fourththird">
-            <p>Other</p>
-            <p id="rich">Solan</p>
-            <p id="eba">Meerii</p>
-            <p id="roba">Wanduu</p>
+            <p>About Dbu</p>
+            <p id="rich">https://dbu.edu.et/</p>
+            
           </div>
         </div>
       </div>

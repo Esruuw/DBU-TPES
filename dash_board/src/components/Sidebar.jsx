@@ -90,14 +90,14 @@ export default class Sidebar extends Component {
             Result Detail
           </a>
 
-          <a
+          {/* <a
             href="#"
             className="item"
             onClick={() => setContent("ListParticipants")}
           >
             <BiMessage className="icon" />
             Report
-          </a>
+          </a> */}
           <a href="#" className="item">
             <BiHelpCircle className="icon" />
             <button onClick={this.logout} className="logoutt">

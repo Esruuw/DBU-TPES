@@ -1,99 +1,113 @@
 /* TeachersList.css */
 
 .teacher--listB {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  .bothh
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-{
+.bothh {
   display: flex;
-  gap: 80% !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.bothh2 button
-{
-width: 100px;
-height: 50px;
-cursor: pointer;
-border-radius: 10px;
+.list--headerB button {
+  font-size: 24px;
+  color: #333;
 }
-  .list--headerB a button{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+
+.bothh2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bothh2 button {
+  padding: 10px 20px;
+  background-color: #42e828;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bothh2 button:hover {
+  background-color: #0056b3;
+}
+
+.list--containerB {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e0f7ff;
+}
+
+tbody td {
+  padding: 15px;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .teacher--listB {
     padding: 10px;
-    background-color: white;
-    border-radius: 8px;
-    
+  }
 
+  table, thead, tbody, th, td, tr {
+    display: block;
   }
-  
-  .list--headerB h2 {
-    margin: 0;
-    font-size: 24px;
-    color: black;
-  
-}
-  
-  .list--headerB a {
-    text-decoration: none;
-    color: #05445E;
-    transition: color 0.3s ease;
-  }
-  
-  .list--headerB a:hover {
-    color: #05445E;
-  }
-  
-  .list--containerB button {
-    width: 50%;
-    margin: 0 auto;  /* Centers the container horizontally */
-    overflow-x: auto;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
+
   thead {
-    background-color: #f5f5f5;
+    display: none;
   }
-  
-  th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #05445E;
-    color: White;
-    border-radius: 3px;
-  }
-  
+
   tbody tr {
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
   }
-  
-  tbody tr:hover {
-    background-color: #312f2f;
-    color: white;
+
+  tbody td {
+    padding: 10px;
+    text-align: right;
+    position: relative;
   }
-  
-  @media (max-width: 768px) {
-    .list--headerB h2 {
-      font-size: 20px;
-    }
-  
-    th, td {
-      padding: 10px 12px;
-    }
+
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
-  
+}

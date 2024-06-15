@@ -1,119 +1,102 @@
-/* General Styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* TeacherList.css */
 
 #teacher-list {
   padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-/* .bothh {
+.bothh {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.list--headerB h2 {
-  font-size: 24px;
-  color: #05445E;
-  text-decoration: none;
-} */
+.bothh2 {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .bothh2 button {
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #05445E;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .bothh2 button:hover {
-  background-color: #036280;
+  background-color: #0056b3;
 }
 
 #teacher-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#teacher-table th, #teacher-table td {
-  padding: 12px 15px;
-  border: 1px solid #ddd;
+#table-header {
+  background-color: #007bff;
+  color: white;
+}
+
+#table-header th {
+  padding: 15px;
   text-align: left;
 }
 
-#teacher-table th {
-  background-color: #05445E;
-  color: white;
-  font-weight: bold;
-}
-
-#teacher-table tr {
+tbody tr:nth-child(odd) {
   background-color: #f9f9f9;
-  transition: background-color 0.3s ease;
 }
 
-#teacher-table tr:hover {
-  background-color: #f1f1f1;
+tbody tr:hover {
+  background-color: #e0f7ff;
 }
 
-#teacher-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+tbody td {
+  padding: 15px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .bothh {
-      flex-direction: column;
-      align-items: flex-start;
+@media (max-width: 768px) {
+  #teacher-list {
+    padding: 10px;
   }
 
-  .bothh2 {
-      margin-top: 10px;
+  #teacher-table, #table-header, tbody td {
+    display: block;
+    width: 100%;
   }
 
-  .bothh2 button {
-      width: 100%;
-      padding: 10px;
-      font-size: 14px;
+  #table-header {
+    background-color: transparent;
+    color: #007bff;
   }
 
-  #teacher-table th, #teacher-table td {
-      padding: 10px 8px;
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
   }
 
-  #teacher-table {
-      box-shadow: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .bothh {
-      flex-direction: column;
-      align-items: flex-start;
+  tbody td {
+    padding: 10px;
+    text-align: right;
+    position: relative;
   }
 
-  .bothh2 button {
-      width: 100%;
-      padding: 8px;
-      font-size: 12px;
-  }
-
-  #teacher-table th, #teacher-table td {
-      padding: 8px 5px;
-      font-size: 12px;
-  }
-
-  #teacher-table {
-      box-shadow: none;
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
